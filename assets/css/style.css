@@ -1,41 +1,63 @@
-/* <!-- HEADER  -->
+/* SECTION ABOUT US  */
+#about-us {
+    background-color: #f6f6f6;
+    padding-bottom: 70px;
+}
 
-    <!-- BACKGROUND IMAGE  -->
-    <!-- LOGO + NAVBAR -->
+#about-us div {
+    text-align: center;
+}
 
+#about-us img {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
 
-    
-    <!-- FINE HEADER  -->
+#about-us h1 {
+    font-size: 1.3em;
+}
 
+#about-us span {
+    font-size: 1.4em;
+}
 
+#about-us hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 140px;
+    border: 0.5px solid lightgray;
+}
 
-    <!-- MAIN -->
-
-    <!-- SECTION CAROSELLO -->
-
-    <!-- SECTION ABOUT US -->
-
-    <!-- SECTION BLOG  -->
-    <!-- BACKGROUND IMAGE -->
-    <!-- SEI DIV  -->
-    <!-- BUTTON -->
-
-    <!-- SECTION MENU -->
-    <!--  DUE DIV  -->
-    <!-- BUTTON -->
-
-    <!-- SECTION NEWS -->
-    <!-- BACKGROUND IMAGE  -->
-    <!-- UN DIV  -->
-
-    <!-- SECTION CONTACTS  -->
-    <!-- <FIELDSET  -->
-    <!-- INPUT  -->
-    <!-- BUTTON  -->
-
-     <!-- FINE MAIN -->
+#about-us p {
+    line-height: 1.5;
+    color: grey;
+}
 
 
-     
+/* MEDIA QUERY ABOUT US  */
 
-    <!-- SECTION FOOTER  --> */
+@media screen and (min-width:768px) {
+    #about-us {
+        background-color: #f6f6f6;
+        padding-bottom: 100px;
+    }
+
+
+    #about-us h1 {
+        font-size: 1.8em;
+    }
+
+    #about-us hr {
+        width: 110px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #about-us h1 {
+        font-size: 2em;
+    }
+
+    #about-us hr {
+        width: 110px;
+    }
+}
