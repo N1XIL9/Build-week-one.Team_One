@@ -37,3 +37,62 @@
      
 
     <!-- SECTION FOOTER  --> */
+
+@media screen and (max-width: 320px) {
+  #home {
+    height: 100vh;
+  }
+  header {
+    height: 30%;
+    width: 100%;
+    background-image: url(../images/header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1.5rem;
+  }
+
+  nav {
+    height: 35%;
+    width: 90%;
+    background-color: #fff;
+    opacity: 0.8;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  #myLinks {
+    display: none;
+  }
+  nav ul li a {
+    color: grey;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    padding: 0;
+  }
+
+  nav a.icon {
+    color: #ff530a;
+  }
+
+  nav a:hover {
+    background-color: #fff;
+    opacity: 0.8;
+    padding-top: 0.5rem;
+  }
+
+  #home h3 {
+    width: 90%;
+    margin: auto;
+  }
+}
