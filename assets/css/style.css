@@ -1,128 +1,80 @@
-/* SECTION ABOUT US  */
-#about-us {
-    background-color: #f6f6f6;
-    padding-bottom: 70px;
-}
+/* SECTION BLOG  */
 
-#about-us div {
+#section-blog {
+    background-image: url('../images/overlay-pattern2.png'), url('../images/blog/blog-bg.jpg');
     text-align: center;
+    background-attachment: fixed;
+    padding-bottom: 100px;
 }
 
-#about-us img {
-    margin-top: 70px;
-    margin-bottom: 40px;
+#section-blog h1 {
+    color: white;
+    font-size: 1.4rem;
+    padding-top: 110px;
+    padding-bottom: 35px;
 }
 
-#about-us h1 {
-    font-size: 1.3em;
+#section-blog span {
+    font-size: 1.7rem;
 }
 
-#about-us span {
-    font-size: 1.4em;
+#section-blog hr {
+    width: 40%;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
-#about-us hr {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 140px;
-    border: 0.5px solid lightgray;
-}
-
-#about-us p {
-    line-height: 1.5;
+#section-blog p {
+    margin-bottom: 20px;
+    font-weight: 100;
     color: grey;
+    font-size: 15px;
 }
 
-/* MEDIA QUERY ABOUT US  */
-
-@media screen and (min-width:768px) {
-   #about-us {
-       background-color: #f6f6f6;
-       padding-bottom: 100px;
-   }
-
-   #about-us h1 {
-     font-size: 1.8em;
- }
-
- #about-us hr {
-     width: 110px;
- }
+.flex-box {
+    background-color: white;
+    padding-bottom: 10px;
 }
 
-@media screen and (min-width:1024px) {
- #about-us h1 {
-     font-size: 2em;
- }
-
- #about-us hr {
-     width: 110px;
- }
-}
- /* SECTION MENU */
-
- #menu_container{
-    text-align: center;
- }
-
- #menu_container span{
-    font-size: 1.5rem;
-    text-transform: uppercase;
- }
-
- #menu_container h2 {
-    font-size: 1.5rem;
-    padding: 4vh 0;
- }
-
- #menu_container p{
-    font-size: 16px;
-    line-height: 1.5;
-    color: #9D9D9D;
-    padding-top: 2em ;
- }
-
- hr{
-    width: 35%;
- }
-
- #menu_price_title{
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin-top: 15vh;
-    margin-bottom: 8vh;
- }
-
- li{
-    margin: 5vh 0;
- }
-
- @media screen and (max-width: 767px){
-   #bottom_border{ display: none;
-
-   }
- }
-
- #menu_price p{
-    font-size: 14px;
-    line-height: 1.5;
-    color: #9D9D9D;
-    padding-top: 0.5em ;
- }
-
-li div{
-    margin-left:0;
+.flex-box img {
+    width: 100%;
 }
 
- li span{
-    padding-top: 2.5vh;
-    display: block;
-    color: #938463;
- }
+.flex-box h3 {
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin-top: 0;
+}
 
- li h3{
-    font-size: 1.5rem;
-    margin: 0;
-    font-weight: 400;
- }
+#tophtre {
+    margin-top: 40px;
+}
 
+.box-description {
+    width: 100%;
+    background-color: white;
+}
+
+.box-description h3:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+.section-blog-button {
+    margin-top: 50px;
+
+    background-color: #ff530a;
+
+    padding: 30px;
+}
+
+
+/* SEI RIMASTO QUI  */
+/* SEI RIMASTO QUI  */
+/* SEI RIMASTO QUI BUTTON */
+
+
+.section-blog-button a {
+    color: white;
+    text-decoration: none;
+
+}
