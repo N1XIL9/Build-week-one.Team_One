@@ -1,128 +1,188 @@
+/* SECTION MENU */
+@media screen and (max-width: 320px) {
+  #home {
+    height: 100vh;
+  }
+  header {
+    height: 30%;
+    width: 100%;
+    background-image: url(../images/header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1.5rem;
+  }
+
+  nav {
+    height: 35%;
+    width: 90%;
+    background-color: #fff;
+    opacity: 0.8;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  #myLinks {
+    display: none;
+  }
+  nav ul li a {
+    color: grey;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    padding: 0;
+  }
+
+  nav a.icon {
+    color: #ff530a;
+  }
+
+  nav a:hover {
+    background-color: #fff;
+    opacity: 0.8;
+    padding-top: 0.5rem;
+  }
+
+  #home h3 {
+    width: 90%;
+    margin: auto;
+  }
+}
 /* SECTION ABOUT US  */
 #about-us {
-    background-color: #f6f6f6;
-    padding-bottom: 70px;
+  background-color: #f6f6f6;
+  padding-bottom: 70px;
 }
 
 #about-us div {
-    text-align: center;
+  text-align: center;
 }
 
 #about-us img {
-    margin-top: 70px;
-    margin-bottom: 40px;
+  margin-top: 70px;
+  margin-bottom: 40px;
 }
 
 #about-us h1 {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
 
 #about-us span {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 #about-us hr {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 140px;
-    border: 0.5px solid lightgray;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 140px;
+  border: 0.5px solid lightgray;
 }
 
 #about-us p {
-    line-height: 1.5;
-    color: grey;
+  line-height: 1.5;
+  color: grey;
 }
 
 /* MEDIA QUERY ABOUT US  */
 
-@media screen and (min-width:768px) {
-   #about-us {
-       background-color: #f6f6f6;
-       padding-bottom: 100px;
-   }
+@media screen and (min-width: 768px) {
+  #about-us {
+    background-color: #f6f6f6;
+    padding-bottom: 100px;
+  }
 
-   #about-us h1 {
-     font-size: 1.8em;
- }
+  #about-us h1 {
+    font-size: 1.8em;
+  }
 
- #about-us hr {
-     width: 110px;
- }
+  #about-us hr {
+    width: 110px;
+  }
 }
 
-@media screen and (min-width:1024px) {
- #about-us h1 {
-     font-size: 2em;
- }
+@media screen and (min-width: 1024px) {
+  #about-us h1 {
+    font-size: 2em;
+  }
 
- #about-us hr {
-     width: 110px;
- }
+  #about-us hr {
+    width: 110px;
+  }
 }
- /* SECTION MENU */
+/* SECTION MENU */
 
- #menu_container{
-    text-align: center;
- }
-
- #menu_container span{
-    font-size: 1.5rem;
-    text-transform: uppercase;
- }
-
- #menu_container h2 {
-    font-size: 1.5rem;
-    padding: 4vh 0;
- }
-
- #menu_container p{
-    font-size: 16px;
-    line-height: 1.5;
-    color: #9D9D9D;
-    padding-top: 2em ;
- }
-
- hr{
-    width: 35%;
- }
-
- #menu_price_title{
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin-top: 15vh;
-    margin-bottom: 8vh;
- }
-
- li{
-    margin: 5vh 0;
- }
-
- @media screen and (max-width: 767px){
-   #bottom_border{ display: none;
-
-   }
- }
-
- #menu_price p{
-    font-size: 14px;
-    line-height: 1.5;
-    color: #9D9D9D;
-    padding-top: 0.5em ;
- }
-
-li div{
-    margin-left:0;
+#menu_container {
+  text-align: center;
 }
 
- li span{
-    padding-top: 2.5vh;
-    display: block;
-    color: #938463;
- }
+#menu_container span {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
 
- li h3{
-    font-size: 1.5rem;
-    margin: 0;
-    font-weight: 400;
- }
+#menu_container h2 {
+  font-size: 1.5rem;
+  padding: 4vh 0;
+}
 
+#menu_container p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #9d9d9d;
+  padding-top: 2em;
+}
+
+hr {
+  width: 35%;
+}
+
+#menu_price_title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 15vh;
+  margin-bottom: 8vh;
+}
+
+li {
+  margin: 5vh 0;
+}
+
+@media screen and (max-width: 767px) {
+  #bottom_border {
+    display: none;
+  }
+}
+
+#menu_price p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #9d9d9d;
+  padding-top: 0.5em;
+}
+
+li div {
+  margin-left: 0;
+}
+
+li span {
+  padding-top: 2.5vh;
+  display: block;
+  color: #938463;
+}
+
+li h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* SECTION FOOTER   */
