@@ -57,7 +57,7 @@
   }
 
   nav {
-    height: 35%;
+    height: 50%;
     width: 90%;
     background-color: #fff;
     opacity: 0.8;
@@ -83,6 +83,7 @@
 
   nav a.icon {
     color: #ff530a;
+    font-size: 1.5rem;
   }
 
   nav a:hover {
@@ -98,33 +99,19 @@
 
   /*CAROUSEL*/
 
-  .carousel {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    /* padding: 10px 40px; */
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    background: #eee;
-    overflow: hidden;
-  }
-
-  /* .carousel h3 {
-    display: inline;
-  } */
-  .carousel img {
-    display: block;
-  }
-
   .arrow {
-    padding: 0;
-    background: #ddd;
-    border-radius: 15px;
-    border: 1px solid gray;
-    font-size: 24px;
-    line-height: 24px;
-    color: #444;
-    display: block;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #aa9d84;
+  }
+
+  #carousel-title {
+    display: flex;
+  }
+  .fa-angle-right {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
   }
 
   .arrow:focus {
@@ -136,21 +123,14 @@
     cursor: pointer;
   }
 
-  /* .prev {
-    left: 7px;
-  }
-
-  .next {
-    right: 7px;
-  } */
-
   .gallery {
     width: 85%;
     overflow: hidden;
+    border-radius: 0.2rem;
   }
 
   .gallery ul {
-    height: 50vh;
+    height: 30vh;
     width: 9999px;
     margin: 0;
     padding: 0;
