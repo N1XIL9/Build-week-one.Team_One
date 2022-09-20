@@ -1,5 +1,5 @@
-/* SECTION MENU */
-#home {
+/*HOME*/
+.home {
   height: 100vh;
 }
 
@@ -34,7 +34,6 @@ nav ul {
   position: absolute;
   top: 53%;
   width: 100%;
-  /* text-align: center; */
   background-color: white;
   line-height: 1.5;
   transition: all 0.5s;
@@ -51,7 +50,7 @@ nav ul li {
   display: none;
 }
 
-#check:checked~ul {
+#check:checked ~ ul {
   display: block;
   bottom: -100;
 }
@@ -77,18 +76,12 @@ nav ul li {
   display: flex;
   justify-content: space-between;
 }
-
 .fa-angle-right {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
 }
 
-.arrow:focus {
-  outline: none;
-}
-
 .arrow:hover {
-  background: #ccc;
   cursor: pointer;
 }
 
@@ -100,16 +93,72 @@ nav ul li {
 
 .gallery ul {
   height: 30vh;
-  width: 9999px;
+  width: 100vw;
   margin: 0;
   padding: 0;
   list-style: none;
-  transition: margin-left 250ms;
+  transition: margin-left 500ms;
   font-size: 0;
 }
 
 .gallery li {
   display: inline-block;
+}
+
+/*MEDIA HOME*/
+@media screen and (min-width: 768px) {
+  header {
+    background-size: cover;
+    height: 50%;
+  }
+
+  nav {
+    height: 15%;
+    display: flex;
+    align-items: stretch;
+    padding: 1.5rem;
+  }
+  nav img {
+    width: 12rem;
+    height: 2rem;
+  }
+
+  nav ul {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav ul li {
+    position: relative;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  /*CAROUSEL*/
+  #carousel {
+    width: 100%;
+  }
+  .gallery ul {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .gallery ul li img {
+    width: 14rem;
+    margin-right: 0.7rem;
+  }
 }
 
 /* SECTION ABOUT US  */
@@ -150,7 +199,6 @@ nav ul li {
 /* MEDIA QUERY */
 
 @media screen and (min-width: 768px) {
-
   /* ABOUT US */
   #about-us {
     background-color: #f6f6f6;
@@ -182,11 +230,9 @@ nav ul li {
   .flex-box {
     padding-bottom: 10px;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
-
   /* ABOUT US  */
   #about-us h1 {
     font-size: 2em;
@@ -197,11 +243,10 @@ nav ul li {
   }
 }
 
-
 /* SECTION BLOG  */
 
 #section-blog {
-  background-image: url('../images/overlay-pattern2.png'), url('../images/blog/blog-bg.jpg');
+  background-image: url("../images/overlay-pattern2.png"), url("../images/blog/blog-bg.jpg");
   text-align: center;
   background-attachment: fixed;
   padding-bottom: 220px;
@@ -247,7 +292,6 @@ nav ul li {
   margin-top: 0;
 }
 
-
 #tophtre {
   margin-top: 40px;
 }
@@ -262,14 +306,13 @@ nav ul li {
 }
 
 #section-blog button {
-  font-family: 'first-font';
+  font-family: "first-font";
   margin-top: 50px;
   background-color: #ff530a;
   padding: 30px;
   float: left;
   border: none;
   width: 240px;
-
 }
 
 .section-blog-button a {
