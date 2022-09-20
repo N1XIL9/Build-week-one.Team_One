@@ -1,4 +1,5 @@
-#home {
+/*HOME*/
+.home {
   height: 100vh;
 }
 
@@ -104,6 +105,7 @@ nav ul li {
   display: inline-block;
 }
 
+/*MEDIA HOME*/
 @media screen and (min-width: 768px) {
   header {
     background-size: cover;
@@ -157,4 +159,280 @@ nav ul li {
     width: 14rem;
     margin-right: 0.7rem;
   }
+}
+
+/* SECTION ABOUT US  */
+#about-us {
+  background-color: #f6f6f6;
+  padding-bottom: 70px;
+}
+
+#about-us div {
+  text-align: center;
+}
+
+#about-us img {
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+#about-us h1 {
+  font-size: 1.3em;
+}
+
+#about-us span {
+  font-size: 1.4em;
+}
+
+#about-us hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 140px;
+  border: 0.5px solid lightgray;
+}
+
+#about-us p {
+  line-height: 1.5;
+  color: grey;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 768px) {
+  /* ABOUT US */
+  #about-us {
+    background-color: #f6f6f6;
+    padding-bottom: 100px;
+  }
+
+  #about-us h1 {
+    font-size: 1.8em;
+  }
+
+  #about-us hr {
+    width: 110px;
+  }
+
+  /* BLOG */
+  .flex-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #section-blog .layer {
+    max-width: 50%;
+  }
+
+  #section-blog img {
+    width: 50%;
+  }
+
+  .flex-box {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* ABOUT US  */
+  #about-us h1 {
+    font-size: 2em;
+  }
+
+  #about-us hr {
+    width: 110px;
+  }
+}
+
+/* SECTION BLOG  */
+
+#section-blog {
+  background-image: url("../images/overlay-pattern2.png"), url("../images/blog/blog-bg.jpg");
+  text-align: center;
+  background-attachment: fixed;
+  padding-bottom: 220px;
+}
+
+#section-blog h1 {
+  color: white;
+  font-size: 1.4rem;
+  padding-top: 110px;
+  padding-bottom: 35px;
+}
+
+#section-blog span {
+  font-size: 1.7rem;
+}
+
+#section-blog hr {
+  width: 40%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+#section-blog p {
+  margin-bottom: 20px;
+  font-weight: 100;
+  color: grey;
+  font-size: 15px;
+}
+
+.flex-box {
+  background-color: white;
+  padding-bottom: 10px;
+  /*modificare nella query */
+}
+
+.flex-box img {
+  width: 100%;
+}
+
+.flex-box h3 {
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+#tophtre {
+  margin-top: 40px;
+}
+
+.box-description {
+  width: 100%;
+  background-color: white;
+}
+
+.box-description h3:nth-of-type(1) {
+  margin-top: 20px;
+}
+
+#section-blog button {
+  font-family: "first-font";
+  margin-top: 50px;
+  background-color: #ff530a;
+  padding: 30px;
+  float: left;
+  border: none;
+  width: 240px;
+}
+
+.section-blog-button a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* SECTION MENU */
+
+#menu {
+  width: 92%;
+  margin: 0 auto;
+}
+
+#menu_container,
+#menu_price {
+  width: 100%;
+  margin: 0;
+}
+
+#menu_container {
+  text-align: center;
+}
+
+#menu_container span {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#menu_container h2 {
+  font-size: 1.5rem;
+  padding: 4vh 0;
+}
+
+#menu_container p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #9d9d9d;
+  padding-top: 2em;
+}
+
+hr {
+  width: 35%;
+}
+
+#menu_price_title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 15vh;
+  margin-bottom: 8vh;
+}
+
+/* MENU LIST  */
+
+#menu_price p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #9d9d9d;
+  padding-top: 0.5em;
+}
+
+ul {
+  margin-bottom: 12vh;
+}
+
+li div {
+  margin-left: 0;
+}
+
+li span {
+  padding-top: 2.5vh;
+  display: block;
+  color: #938463;
+}
+
+li h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 400;
+  position: relative;
+  z-index: 99;
+}
+
+li {
+  margin: 5vh 0;
+}
+
+.bottom_border {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  border: 1px dotted #c9c9c9;
+  margin-top: 1.5vh;
+}
+
+@media screen and (max-width: 767px) {
+  #bottom_border {
+    display: none;
+  }
+}
+
+/* MENU BUTTON */
+
+#menu_btn {
+  font-family: "first-font";
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  float: right;
+  padding: 5vh 16vh;
+  background-color: white;
+  border: 1px solid #ff530a;
+  color: #ff530a;
+  margin-bottom: 5vh;
+  transition: 0.5s;
+}
+
+#menu_btn:hover {
+  background-color: #ff530a;
+  color: white;
 }
