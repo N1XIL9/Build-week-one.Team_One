@@ -280,13 +280,12 @@ nav ul li {
 
 /* SECTION MENU */
 
-#menu {
+#menu_price {
   width: 92%;
   margin: 0 auto;
 }
 
-#menu_container,
-#menu_price {
+#menu_container {
   width: 100%;
   margin: 0;
 }
@@ -350,7 +349,7 @@ li h3 {
   font-size: 1.5rem;
   margin: 0;
   font-weight: 400;
-  position: relative;
+  /* position: relative; */
   z-index: 99;
 }
 
@@ -359,7 +358,7 @@ li {
 }
 
 .bottom_border {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   width: 100%;
   height: 1px;
@@ -368,28 +367,53 @@ li {
 }
 
 @media screen and (max-width: 767px) {
-  #bottom_border {
+  .bottom_border {
     display: none;
   }
 }
 
 /* MENU BUTTON */
 
+#btn_container{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
 #menu_btn {
   font-family: "first-font";
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
-  float: right;
-  padding: 5vh 16vh;
   background-color: white;
   border: 1px solid #ff530a;
   color: #ff530a;
-  margin-bottom: 5vh;
+  padding: 4vh 10vh;
   transition: 0.5s;
 }
 
 #menu_btn:hover {
   background-color: #ff530a;
+  color: white;
+}
+
+/* START NEWS SECTION */
+
+#news{
+  width: 100%;
+  padding: 100px 0px;
+  margin-top: 12vh;
+  text-align: center;
+  background: url(../images/subscribe-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#news_container span{
+  color: #ff530a;
+}
+
+#news_container h2{
   color: white;
 }
