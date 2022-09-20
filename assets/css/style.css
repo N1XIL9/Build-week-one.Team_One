@@ -30,10 +30,29 @@
     padding-top: 1rem;
   }
 
+  ul {
+    /* position: absolute; */
+    width: 100%;
+    height: 30%;
+    top: 70px;
+    left: -100%;
+    /* text-align: center; */
+    /* background-color: white; */
+    line-height: 2.5;
+    transition: all 0.5s;
+  }
+
   #myLinks {
     display: none;
   }
-  nav ul li a {
+  /* nav ul li a {
+    color: grey;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    padding: 0;
+  } */
+  nav ul li {
     color: grey;
     text-decoration: none;
     font-size: 17px;
@@ -41,20 +60,43 @@
     padding: 0;
   }
 
-  nav a.icon {
+  /* nav a.icon {
     color: #ff530a;
     font-size: 1.5rem;
-  }
+  } */
 
-  nav a:hover {
+  /* nav a:hover {
     background-color: #fff;
     opacity: 0.8;
     padding-top: 0.5rem;
-  }
+  } */
 
   #home h3 {
     width: 90%;
     margin: auto;
+  }
+
+  #check {
+    display: none;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .fa-bars {
+    display: inline-block;
+    color: #ff530a;
+  }
+
+  .sign-up-button {
+    background: white;
+    border: none;
+    color: black;
   }
 
   /*CAROUSEL*/
@@ -105,7 +147,7 @@
     display: inline-block;
   }
 }
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
   #home {
     height: 100vh;
   }
@@ -166,7 +208,7 @@
 
   /*CAROUSEL*/
 
-  .arrow {
+/* .arrow {
     background: none;
     border: none;
     font-size: 1.8rem;
@@ -204,11 +246,11 @@
     list-style: none;
     transition: margin-left 250ms;
     /* remove white-space between inline-block'ed li */
-    /* http://davidwalsh.name/remove-whitespace-inline-block */
-    font-size: 0;
+/* http://davidwalsh.name/remove-whitespace-inline-block */
+/* font-size: 0;
   }
 
   .gallery li {
     display: inline-block;
   }
-}
+}   */

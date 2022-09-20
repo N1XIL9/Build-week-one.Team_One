@@ -1,17 +1,17 @@
 // NAV
 
-function myFunction() {
-  let x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+// function myFunction() {
+//   let x = document.getElementById("myLinks");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
 
-    // x.style.display = "flex";
-    // x.style.flexDirection = "column";
-    // x.style.marginTop = "1rem";
-  }
-}
+//     // x.style.display = "flex";
+//     // x.style.flexDirection = "column";
+//     // x.style.marginTop = "1rem";
+//   }
+// }
 
 //CAROUSEL
 
