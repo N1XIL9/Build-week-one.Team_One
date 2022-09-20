@@ -22,7 +22,7 @@ for (let li of carousel.querySelectorAll("li")) {
   i++;
 }
 
-let width = 276;
+let width = 17.25;
 let count = 1;
 
 let list = carousel.querySelector("ul");
@@ -33,5 +33,5 @@ let position = 0;
 carousel.querySelector(".next").onclick = function () {
   position -= width * count;
   position = Math.max(position, -width * (listElems.length - count));
-  list.style.marginLeft = position + "px";
+  list.style.marginLeft = position + "rem";
 };

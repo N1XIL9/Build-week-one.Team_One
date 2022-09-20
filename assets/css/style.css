@@ -33,7 +33,6 @@ nav ul {
   position: absolute;
   top: 53%;
   width: 100%;
-  /* text-align: center; */
   background-color: white;
   line-height: 1.5;
   transition: all 0.5s;
@@ -81,12 +80,7 @@ nav ul li {
   font-size: inherit;
 }
 
-.arrow:focus {
-  outline: none;
-}
-
 .arrow:hover {
-  background: #ccc;
   cursor: pointer;
 }
 
@@ -98,14 +92,69 @@ nav ul li {
 
 .gallery ul {
   height: 30vh;
-  width: 9999px;
+  width: 100vw;
   margin: 0;
   padding: 0;
   list-style: none;
-  transition: margin-left 250ms;
+  transition: margin-left 500ms;
   font-size: 0;
 }
 
 .gallery li {
   display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background-size: cover;
+    height: 50%;
+  }
+
+  nav {
+    height: 15%;
+    display: flex;
+    align-items: stretch;
+    padding: 1.5rem;
+  }
+  nav img {
+    width: 12rem;
+    height: 2rem;
+  }
+
+  nav ul {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav ul li {
+    position: relative;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  /*CAROUSEL*/
+  #carousel {
+    width: 100%;
+  }
+  .gallery ul {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .gallery ul li img {
+    width: 14rem;
+    margin-right: 0.7rem;
+  }
 }
