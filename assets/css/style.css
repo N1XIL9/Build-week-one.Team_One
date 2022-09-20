@@ -1,6 +1,6 @@
 /*HOME*/
-.home {
-  height: 50vh;
+#home {
+  height: 100vh;
 }
 
 header {
@@ -417,7 +417,7 @@ li {
 
 /* MENU BUTTON */
 
-#btn_container{
+#btn_container {
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -442,7 +442,7 @@ li {
 
 /* START NEWS SECTION */
 
-#news{
+#news {
   width: 100%;
   padding: 100px 0px;
   margin-top: 12vh;
@@ -453,10 +453,10 @@ li {
   background-size: cover;
 }
 
-#news_container span{
+#news_container span {
   color: #ff530a;
 }
 
-#news_container h2{
+#news_container h2 {
   color: white;
 }
