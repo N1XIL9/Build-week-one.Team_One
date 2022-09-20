@@ -185,4 +185,42 @@ li h3 {
   font-weight: 400;
 }
 
+<<<<<<< Updated upstream
 /* SECTION FOOTER   */
+=======
+.bottom_border {
+  position: absolute;
+  top: 0px ;
+  width: 50%;
+  height: 1px;
+  border: 1px dotted #c9c9c9;
+  margin-top: 1.5vh;
+}
+
+@media screen and (max-width: 767px) {
+  #bottom_border {
+    display: none;
+  }
+}
+
+/* MENU BUTTON */
+
+#menu_btn {
+  font-family: "first-font";
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  float: right;
+  padding: 5vh 16vh;
+  background-color: white;
+  border: 1px solid #ff530a;
+  color: #ff530a;
+  margin-bottom: 5vh;
+  transition: 0.5s;
+}
+
+#menu_btn:hover {
+  background-color: #ff530a;
+  color: white;
+}
+>>>>>>> Stashed changes
