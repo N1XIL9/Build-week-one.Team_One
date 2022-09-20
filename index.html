@@ -11,8 +11,69 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- SECTION BLOG  -->
     <main>
+      
+      <section id="home">
+          <!-- HEADER  -->
+        <header>
+          <!-- BACKGROUND IMAGE - CSS -->
+          <!-- LOGO + NAVBAR -->
+          <nav>
+            <img src="./assets/images/logo.png" alt="LOGO">
+            <ul id="myLinks">
+              <li><a href="">HOME</a></li>
+              <li><a href="">ABOUT US</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="">MENU</a></li>
+              <li><a href="">NEWS</a></li>
+              <li><a href="">CONTACTS</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </nav>
+        </header>
+          <!-- FINE HEADER  -->
+    
+        
+    
+          <!-- SECTION CAROSELLO -->
+    
+          <div id="carousel">
+            <h3>FEATURED <span>WORKS</span></h3>
+            <button class="arrow next">⇨</button>
+            <div class="carousel">
+              <ul>
+                <li><img src="./assets/images/slider/slider-img-1.jpg" alt="carousel img"></li>
+                <li><img src="./assets/images/slider/slider-img-2.jpg" alt="carousel img"></li>
+                <li><img src="./assets/images/slider/slider-img-3.jpg" alt="carousel img"></li>
+                <li><img src="./assets/images/slider/slider-img-4.jpg" alt="carousel img"></li>
+                <li><img src="./assets/images/slider/slider-img-1.jpg" alt="carousel img"></li>
+                <li><img src="./assets/images/slider/slider-img-2.jpg" alt="carousel img"></li>
+                <li><img src="./assets/images/slider/slider-img-3.jpg" alt="carousel img"></li>
+                <li><img src="./assets/images/slider/slider-img-4.jpg" alt="carousel img"></li>
+              </ul>
+            </div>
+          </div>
+      </section>
+    
+        <!-- SECTION ABOUT US -->
+    
+      <section id="about-us">
+        <div>
+          <img src="./assets/images/cooker-img.png" alt="">
+          <h1>Your <span>Restaurant’s</span></h1>
+          <h1>Website Has To Look <span>Good</span></h1>
+          <hr>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+        </div>
+      </section>
+      
+        <!-- SECTION BLOG  -->
       <section id="section-blog">
         <h1>Latest <span>From</span> the <span>Blog</span></h1>
         <hr />
@@ -20,7 +81,7 @@
         <div class="flex-box">
           
           <img src="./assets/images/blog/blog-img-1.jpg" alt="blog-img-1" />
-          <div>
+          <div class="layer">
             <div class="box-description">
               <h3 class="tophtre">
                 Homestyle     
@@ -34,7 +95,7 @@
           </div>
 
           <img src="./assets/images/blog/blog-img-2.jpg" alt="blog-img-2" />
-          <div>
+          <div class="layer">
             <div class="box-description">
               <h3>
                 Homestyle     
@@ -47,7 +108,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="layer">
             <div class="box-description">
               <h3 id="tophtre">
                 Homestyle     
@@ -61,7 +122,7 @@
           </div>
           <img class="img-right" src="./assets/images/blog/blog-img-3.jpg" alt="blog-img-3" />
 
-          <div>
+          <div class="layer">
             <div class="box-description">
               <h3>
                 Homestyle     
@@ -76,7 +137,7 @@
           <img class="img-right" src="./assets/images/blog/blog-img-4.jpg" alt="blog-img-4" />
 
           <img src="./assets/images/blog/blog-img-5.jpg" alt="blog-img-5" />
-          <div>
+          <div class="layer">
             <div class="box-description">
               <h3>
                 Homestyle     
@@ -90,7 +151,7 @@
           </div>
 
           <img src="./assets/images/blog/blog-img-6.jpg" alt="blog-img-6" />
-          <div>
+          <div class="layer">
             <div class="box-description">
               <h3>
                 Homestyle     
@@ -105,10 +166,73 @@
         </div>
 
         <div class="section-blog-button">
-          <a href="#">MORE INFO</a>
+           <button><a href="#">MORE INFO</a></button>
+        </div>
+      </section>
+
+      <!-- SECTION MENU -->
+
+      <section id="menu">
+
+        <div id="menu_container">
+          <h2>our <span>menu</span> the <span>price</span></h2>
+          <hr>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum laborum vitae similique vero dicta maiores
+            error consectetur? Repudiandae illo natus, tenetur nesciuntd</p>
         </div>
 
+        <div id="menu_price">
+          <h3 id="menu_price_title">featured <span>on the week</span></h3>
+
+          <ul>
+            <li>
+              <div class="menu_price_item">
+                <h3>Pancakes n' Such</h3>
+                <div class="bottom_border"></div>
+                <span>$ 25.00</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ad corrupti! Sapiente pariatur ullam
+                dolorum, placeat aut </p>
+            </li>
+            <li>
+              <h3 class="menu_price_item">Homestyle Chicken Pot Pie</h3>
+              <div class="bottom_border"></div>
+              <span>$ 10.00</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ad corrupti! Sapiente pariatur ullam
+                dolorum, placeat aut </p>
+            </li>
+            <li>
+              <h3 class="menu_price_item">Cereal, Panecillos y Frutas</h3>
+              <div class="bottom_border"></div>
+              <span>$ 5.00</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ad corrupti! Sapiente pariatur ullam
+                dolorum, placeat aut </p>
+            </li>
+            <li>
+              <h3 class="menu_price_item">Meat of Skewers</h3>
+              <div class="bottom_border"></div>
+              <span>$ 15.00</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ad corrupti! Sapiente pariatur ullam
+                dolorum, placeat aut </p>
+            </li>
+            <li>
+              <h3 class="menu_price_item">Steak with a Garlic and Parsley Risotto</h3>
+              <div class="bottom_border"></div>
+              <span>$ 75.00</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ad corrupti! Sapiente pariatur ullam
+                dolorum, placeat aut </p>
+            </li>
+            <li>
+              <h3 class="menu_price_item">Caesar Salad</h3>
+              <div class="bottom_border"></div>
+              <span>$ 7.00</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ad corrupti! Sapiente pariatur ullam
+                dolorum, placeat aut </p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+    <script src="./assets/Js/script.js"></script>
   </body>
 </html>
