@@ -349,20 +349,11 @@ li div {
   margin-left: 0 auto;
 }
 
-<<<<<<< Updated upstream
-
-li h3 span {
-  padding-top: 2.5vh;
-  display: block;
-  color: #938463;
-  font-size: 1rem;
-=======
 li span {
   font-size: 1rem;
   padding-top: 2vh;
   color: #938463;
   display: block;
->>>>>>> Stashed changes
 }
 
 li h3 {
@@ -371,10 +362,6 @@ li h3 {
   margin: 0;
   font-weight: 400;
   position: relative;
-<<<<<<< Updated upstream
-  z-index: 99;
-=======
->>>>>>> Stashed changes
 }
 
 li {
@@ -387,12 +374,8 @@ li {
   margin-top:3vh;
   width: 100%;
   height: 0.1px;
-<<<<<<< Updated upstream
   border: 0.1px dotted #c9c9c9;
   margin-top: 1.5vh;
-=======
-  border: 1px dotted #c9c9c9;
->>>>>>> Stashed changes
 }
 
 @media screen and (min-width: 0px) {
