@@ -1,43 +1,110 @@
-/* <!-- HEADER  -->
+@media screen and (max-width: 320px) {
+  #home {
+    height: 100vh;
+  }
+  header {
+    height: 30%;
+    width: 100%;
+    background-image: url(../images/header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
 
-    <!-- BACKGROUND IMAGE  -->
-    <!-- LOGO + NAVBAR -->
+  nav {
+    height: 50%;
+    width: 90%;
+    background-color: #fff;
+    opacity: 0.8;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
 
-    <!-- FINE HEADER  -->
+  #myLinks {
+    display: none;
+  }
+  nav ul li a {
+    color: grey;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    padding: 0;
+  }
 
+  nav a.icon {
+    color: #ff530a;
+    font-size: 1.5rem;
+  }
 
+  nav a:hover {
+    background-color: #fff;
+    opacity: 0.8;
+    padding-top: 0.5rem;
+  }
 
-    <!-- MAIN -->
+  #home h3 {
+    width: 90%;
+    margin: auto;
+  }
 
-    <!-- SECTION CAROSELLO -->
+  /*CAROUSEL*/
 
-    <!-- SECTION ABOUT US -->
+  .arrow {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #aa9d84;
+  }
 
-    <!-- SECTION BLOG  -->
-    <!-- BACKGROUND IMAGE -->
-    <!-- SEI DIV  -->
-    <!-- BUTTON -->
+  #carousel-title {
+    display: flex;
+  }
+  .fa-angle-right {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+  }
 
-    <!-- SECTION MENU -->
-    <!--  DUE DIV  -->
-    <!-- BUTTON -->
+  .arrow:focus {
+    outline: none;
+  }
 
-    <!-- SECTION NEWS -->
-    <!-- BACKGROUND IMAGE  -->
-    <!-- UN DIV  -->
+  .arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+  }
 
-    <!-- SECTION CONTACTS  -->
-    <!-- <FIELDSET  -->
-    <!-- INPUT  -->
-    <!-- BUTTON  -->
+  .gallery {
+    width: 85%;
+    overflow: hidden;
+    border-radius: 0.2rem;
+  }
 
-     <!-- FINE MAIN -->
+  .gallery ul {
+    height: 30vh;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    /* remove white-space between inline-block'ed li */
+    /* http://davidwalsh.name/remove-whitespace-inline-block */
+    font-size: 0;
+  }
 
-
-     
-
-    <!-- SECTION FOOTER  --> */
-
+  .gallery li {
+    display: inline-block;
+  }
+}
 @media screen and (max-width: 320px) {
   #home {
     height: 100vh;
