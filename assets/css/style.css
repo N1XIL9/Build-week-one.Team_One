@@ -337,6 +337,10 @@ li p {
   padding-top: 0.5em;
 }
 
+#menu_price_item{
+  position: relative;
+}
+
 ul {
   margin-bottom: 12vh;
 }
@@ -345,20 +349,32 @@ li div {
   margin-left: 0 auto;
 }
 
+<<<<<<< Updated upstream
 
 li h3 span {
   padding-top: 2.5vh;
   display: block;
   color: #938463;
   font-size: 1rem;
+=======
+li span {
+  font-size: 1rem;
+  padding-top: 2vh;
+  color: #938463;
+  display: block;
+>>>>>>> Stashed changes
 }
 
 li h3 {
+  background-color: white;
   font-size: 1.5rem;
   margin: 0;
   font-weight: 400;
   position: relative;
+<<<<<<< Updated upstream
   z-index: 99;
+=======
+>>>>>>> Stashed changes
 }
 
 li {
@@ -368,10 +384,15 @@ li {
 .bottom_border {
   position: absolute;
   top: 0;
+  margin-top:3vh;
   width: 100%;
   height: 0.1px;
+<<<<<<< Updated upstream
   border: 0.1px dotted #c9c9c9;
   margin-top: 1.5vh;
+=======
+  border: 1px dotted #c9c9c9;
+>>>>>>> Stashed changes
 }
 
 @media screen and (min-width: 0px) {
@@ -379,7 +400,17 @@ li {
   .bottom_border {
     display: none;
   }
+
 }
+
+@media screen and (min-width: 768px) {
+  
+ li span{
+   float:right;
+   padding-top: 0;
+  }
+}
+  
 
 @media screen and (min-width: 768px){
 
