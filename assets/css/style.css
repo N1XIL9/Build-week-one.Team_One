@@ -178,6 +178,11 @@ nav ul li {
   #section-blog img {
     width: 50%;
   }
+
+  .flex-box {
+    padding-bottom: 10px;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
