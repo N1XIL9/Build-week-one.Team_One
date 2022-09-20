@@ -1,256 +1,112 @@
-@media screen and (max-width: 320px) {
-  #home {
-    height: 100vh;
-  }
-  header {
-    height: 30%;
-    width: 100%;
-    background-image: url(../images/header.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 1.5rem;
-  }
-
-  nav {
-    height: 50%;
-    width: 90%;
-    background-color: #fff;
-    opacity: 0.8;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
-
-  ul {
-    /* position: absolute; */
-    width: 100%;
-    height: 30%;
-    top: 70px;
-    left: -100%;
-    /* text-align: center; */
-    /* background-color: white; */
-    line-height: 2.5;
-    transition: all 0.5s;
-  }
-
-  #myLinks {
-    display: none;
-  }
-  /* nav ul li a {
-    color: grey;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    padding: 0;
-  } */
-  nav ul li {
-    color: grey;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    padding: 0;
-  }
-
-  /* nav a.icon {
-    color: #ff530a;
-    font-size: 1.5rem;
-  } */
-
-  /* nav a:hover {
-    background-color: #fff;
-    opacity: 0.8;
-    padding-top: 0.5rem;
-  } */
-
-  #home h3 {
-    width: 90%;
-    margin: auto;
-  }
-
-  #check {
-    display: none;
-  }
-
-  #check:checked ~ ul {
-    left: 0;
-  }
-
-  .checkbtn {
-    display: block;
-  }
-
-  .fa-bars {
-    display: inline-block;
-    color: #ff530a;
-  }
-
-  .sign-up-button {
-    background: white;
-    border: none;
-    color: black;
-  }
-
-  /*CAROUSEL*/
-
-  .arrow {
-    background: none;
-    border: none;
-    font-size: 1.8rem;
-    color: #aa9d84;
-  }
-
-  #carousel-title {
-    display: flex;
-  }
-  .fa-angle-right {
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-  }
-
-  .arrow:focus {
-    outline: none;
-  }
-
-  .arrow:hover {
-    background: #ccc;
-    cursor: pointer;
-  }
-
-  .gallery {
-    width: 85%;
-    overflow: hidden;
-    border-radius: 0.2rem;
-  }
-
-  .gallery ul {
-    height: 30vh;
-    width: 9999px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    transition: margin-left 250ms;
-    /* remove white-space between inline-block'ed li */
-    /* http://davidwalsh.name/remove-whitespace-inline-block */
-    font-size: 0;
-  }
-
-  .gallery li {
-    display: inline-block;
-  }
+#home {
+  height: 100vh;
 }
-/* @media screen and (max-width: 320px) {
-  #home {
-    height: 100vh;
-  }
-  header {
-    height: 30%;
-    width: 100%;
-    background-image: url(../images/header.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 1.5rem;
-  }
 
-  nav {
-    height: 50%;
-    width: 90%;
-    background-color: #fff;
-    opacity: 0.8;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
+header {
+  height: 30%;
+  width: 100%;
+  background-image: url(../images/header.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* overflow: hidden; */
+  position: relative;
+  margin-bottom: 1.5rem;
+}
 
-  #myLinks {
-    display: none;
-  }
-  nav ul li a {
-    color: grey;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    padding: 0;
-  }
+nav {
+  height: 50%;
+  width: 90%;
+  background-color: #fff;
+  opacity: 0.8;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
 
-  nav a.icon {
-    color: #ff530a;
-    font-size: 1.5rem;
-  }
+nav ul {
+  position: absolute;
+  top: 53%;
+  width: 100%;
+  /* text-align: center; */
+  background-color: white;
+  line-height: 1.5;
+  transition: all 0.5s;
+  display: none;
+}
 
-  nav a:hover {
-    background-color: #fff;
-    opacity: 0.8;
-    padding-top: 0.5rem;
-  }
+nav ul li {
+  display: block;
+  background-color: white;
+  z-index: 5;
+}
 
-  #home h3 {
-    width: 90%;
-    margin: auto;
-  }
+#check {
+  display: none;
+}
 
-  /*CAROUSEL*/
+#check:checked ~ ul {
+  display: block;
+  bottom: -100;
+}
 
-/* .arrow {
-    background: none;
-    border: none;
-    font-size: 1.8rem;
-    color: #aa9d84;
-  }
+.checkbtn {
+  display: block;
+}
 
-  #carousel-title {
-    display: flex;
-  }
-  .fa-angle-right {
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-  }
+.fa-bars {
+  color: #ff530a;
+}
 
-  .arrow:focus {
-    outline: none;
-  }
+/*CAROUSEL*/
 
-  .arrow:hover {
-    background: #ccc;
-    cursor: pointer;
-  }
+.arrow {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #aa9d84;
+}
 
-  .gallery {
-    width: 85%;
-    overflow: hidden;
-    border-radius: 0.2rem;
-  }
+#carousel-title {
+  display: flex;
+  justify-content: space-between;
+}
+.fa-angle-right {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+}
 
-  .gallery ul {
-    height: 30vh;
-    width: 9999px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    transition: margin-left 250ms;
-    /* remove white-space between inline-block'ed li */
-/* http://davidwalsh.name/remove-whitespace-inline-block */
-/* font-size: 0;
-  }
+.arrow:focus {
+  outline: none;
+}
 
-  .gallery li {
-    display: inline-block;
-  }
-}   */
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.gallery {
+  width: 85%;
+  overflow: hidden;
+  border-radius: 0.2rem;
+}
+
+.gallery ul {
+  height: 30vh;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+}
