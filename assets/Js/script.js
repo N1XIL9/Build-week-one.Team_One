@@ -6,6 +6,10 @@ function myFunction() {
     x.style.display = "none";
   } else {
     x.style.display = "block";
+
+    // x.style.display = "flex";
+    // x.style.flexDirection = "column";
+    // x.style.marginTop = "1rem";
   }
 }
 
