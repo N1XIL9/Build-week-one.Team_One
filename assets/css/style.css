@@ -17,6 +17,10 @@ header {
   margin-bottom: 1.5rem;
 }
 
+#title-logo {
+  color: #9d8e71;
+}
+
 nav {
   height: 50%;
   width: 90%;
