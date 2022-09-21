@@ -797,8 +797,6 @@ li {
 
   }
 
-
-
   .box-description-blog::after {
     content: "";
     position: absolute;
@@ -810,6 +808,4 @@ li {
     background: #fff;
     transform: rotate(45deg);
   }
-
-
 }
