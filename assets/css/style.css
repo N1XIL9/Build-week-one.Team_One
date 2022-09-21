@@ -61,7 +61,7 @@ nav ul li a {
   display: none;
 }
 
-#check:checked~ul {
+#check:checked ~ ul {
   display: block;
   bottom: -100;
 }
@@ -136,95 +136,7 @@ nav ul li a {
   color: grey;
 }
 
-@media screen and (min-width: 768px) {
 
-  /*HOME*/
-  header {
-    background-size: cover;
-    height: 50%;
-  }
-
-  nav {
-    height: 24%;
-    display: flex;
-    padding: 1rem;
-  }
-
-  nav ul {
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: transparent;
-  }
-
-  nav ul li a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .fa-bars {
-    display: none;
-  }
-
-  /*CAROUSEL*/
-  #carousel {
-    width: 100%;
-  }
-
-  .container-flex-carousel {
-    display: inline-block;
-    overflow: auto;
-  }
-
-  .carousel-item {
-    width: 35%;
-    height: 35%;
-  }
-
-  /* ABOUT US */
-  #about-us {
-    background-color: #f6f6f6;
-    padding-bottom: 100px;
-  }
-
-  #about-us h1 {
-    font-size: 1.8em;
-  }
-
-  #about-us hr {
-    width: 110px;
-  }
-
-  /* BLOG */
-  .flex-box {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  #section-blog .layer {
-    max-width: 50%;
-  }
-
-  #section-blog img {
-    width: 50%;
-  }
-
-  .flex-box {
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-
-  /* ABOUT US  */
-  #about-us h1 {
-    font-size: 2em;
-  }
-
-  #about-us hr {
-    width: 110px;
-  }
-}
 
 /* SECTION BLOG  */
 
@@ -462,7 +374,8 @@ nav ul li a {
   width: 100%;
   margin-top: 12vh;
   text-align: center;
-  background: url(../images/overlay-pattern2.png), url(../images/subscribe-bg.jpg);
+  background: url(../images/overlay-pattern2.png),
+    url(../images/subscribe-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -536,7 +449,6 @@ nav ul li a {
   width: 100%;
   justify-content: flex-start;
 }
-
 
 /* CONTACT US SECTION */
 
@@ -791,6 +703,7 @@ nav ul li a {
   }
 
   /* NEWS */
+
   #news_container h2 {
     font-size: 2.5rem;
   }
@@ -892,5 +805,4 @@ nav ul li a {
   #news hr {
     width: 15%;
   }
-
 }
