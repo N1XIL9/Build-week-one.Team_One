@@ -110,15 +110,16 @@ nav ul li a {
   }
 
   nav {
-    height: 28%;
+    height: 24%;
     display: flex;
-    padding: 2.2rem;
+    padding: 1rem;
   }
 
   nav ul {
     position: relative;
     display: flex;
     justify-content: space-evenly;
+    background-color: transparent;
   }
 
   nav ul li a {
@@ -133,6 +134,10 @@ nav ul li a {
   /*CAROUSEL*/
   #carousel {
     width: 100%;
+  }
+
+  .d-block {
+    width: 50%;
   }
 }
 
