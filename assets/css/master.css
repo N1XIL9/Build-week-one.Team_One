@@ -3,9 +3,7 @@
   font-family: "first-font";
   src: url("../fonts/ufonts.com_tw-cen-mt.ttf");
 }
-* {
-  box-sizing: border-box;
-}
+
 /* FONT FAMILY  */
 body {
   font-family: "first-font";
