@@ -1,4 +1,3 @@
-/* @media screen and (min-width: 320px) { */
 /*HOME*/
 
 #home {
@@ -101,9 +100,46 @@ nav ul li a {
 .carousel {
   z-index: 1;
 }
-/* } */
-/*MEDIA HOME*/
+
+/* SECTION ABOUT US  */
+#about-us {
+  background-color: #f6f6f6;
+  padding-bottom: 70px;
+}
+
+#about-us div {
+  text-align: center;
+}
+
+#about-us img {
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+#about-us h1 {
+  font-size: 1.3em;
+}
+
+#about-us span {
+  font-size: 1.4em;
+}
+
+#about-us hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 140px;
+  border: 0.5px solid lightgray;
+}
+
+#about-us p {
+  line-height: 1.5;
+  color: grey;
+}
+
+/* MEDIA QUERY */
+
 @media screen and (min-width: 768px) {
+  /*HOME*/
   header {
     background-size: cover;
     height: 50%;
@@ -145,46 +181,7 @@ nav ul li a {
     width: 35%;
     height: 35%;
   }
-}
 
-/* SECTION ABOUT US  */
-#about-us {
-  background-color: #f6f6f6;
-  padding-bottom: 70px;
-}
-
-#about-us div {
-  text-align: center;
-}
-
-#about-us img {
-  margin-top: 70px;
-  margin-bottom: 40px;
-}
-
-#about-us h1 {
-  font-size: 1.3em;
-}
-
-#about-us span {
-  font-size: 1.4em;
-}
-
-#about-us hr {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  width: 140px;
-  border: 0.5px solid lightgray;
-}
-
-#about-us p {
-  line-height: 1.5;
-  color: grey;
-}
-
-/* MEDIA QUERY */
-
-@media screen and (min-width: 768px) {
   /* ABOUT US */
   #about-us {
     background-color: #f6f6f6;
