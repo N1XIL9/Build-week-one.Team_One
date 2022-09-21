@@ -127,7 +127,7 @@ nav ul li {
   margin-bottom: 40px;
 }
 
-#about-us h1 {
+#about-us h2 {
   font-size: 1.3em;
 }
 
@@ -158,7 +158,7 @@ nav ul li {
   padding-bottom: 220px;
 }
 
-#section-blog h1 {
+#section-blog h2 {
   color: white;
   font-size: 1.4rem;
   padding-top: 110px;
@@ -391,7 +391,7 @@ li {
     padding-bottom: 100px;
   }
 
-  #about-us h1 {
+  #about-us h2 {
     font-size: 1.8em;
   }
 
@@ -436,7 +436,7 @@ li {
     padding-bottom: 100px;
   }
 
-  #section-blog h1 {
+  #section-blog h2 {
     font-size: 2.5rem;
   }
 
@@ -506,7 +506,7 @@ li {
   @media screen and (min-width: 1024px) {
 
     /* ABOUT US  */
-    #about-us h1 {
+    #about-us h2 {
       font-size: 2em;
     }
 
