@@ -88,12 +88,7 @@ nav ul li a {
   justify-content: space-between;
 }
 
-.arrow:focus {
-  outline: none;
-}
-
 .arrow:hover {
-  background: #ccc;
   cursor: pointer;
 }
 
