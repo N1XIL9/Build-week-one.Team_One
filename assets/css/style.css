@@ -471,22 +471,19 @@ li {
 
   .box-description-blog {
     position: relative;
-
   }
 
   .box-description-blog-sx {
     position: relative;
-
   }
 
   .box-description-blog::after {
     content: "";
     position: absolute;
-    right: 346px;
-    top: 50%;
-    width: 30px;
-    height: 30px;
-    margin-top: -71px;
+    left: -15px;
+    top: 25%;
+    width: 40px;
+    height: 40px;
     background: #fff;
     transform: rotate(45deg);
   }
@@ -495,67 +492,63 @@ li {
     content: "";
     position: absolute;
     right: -15px;
-    top: 50%;
-    width: 30px;
-    height: 30px;
-    margin-top: -71px;
+    top: 25%;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  /* ABOUT US  */
+  #about-us h2 {
+    font-size: 2em;
+  }
+
+  #about-us hr {
+    width: 110px;
+  }
+
+  /* BLOG  */
+  #section-blog button {
+    float: right;
+    margin: 0 auto;
+  }
+
+  .box-img-blog {
+    max-width: 25%;
+    height: 212px;
+  }
+
+  .box-description-blog {
+    max-width: 25%;
+    padding-bottom: 71px;
+  }
+
+  .box-description-blog-sx {
+    max-width: 25%;
+    padding-bottom: 71px;
+  }
+
+  /* ADD TRIANGLE BOX DESCIPTION  */
+
+  .box-description-blog {
+    position: relative;
+  }
+
+  .box-description-blog::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 25%;
+    width: 40px;
+    height: 40px;
     background: #fff;
     transform: rotate(45deg);
   }
 
-  @media screen and (min-width: 1024px) {
 
-    /* ABOUT US  */
-    #about-us h2 {
-      font-size: 2em;
-    }
-
-    #about-us hr {
-      width: 110px;
-    }
-
-    /* BLOG  */
-    #section-blog button {
-      float: right;
-      margin: 0 auto;
-    }
-
-    .box-img-blog {
-      max-width: 25%;
-      height: 212px;
-    }
-
-    .box-description-blog {
-      max-width: 25%;
-      padding-bottom: 71px;
-    }
-
-    .box-description-blog-sx {
-      max-width: 25%;
-      padding-bottom: 71px;
-    }
-
-    /* ADD TRIANGLE BOX DESCIPTION  */
-
-    .box-description-blog {
-      position: relative;
-
-    }
-
-
-
-    .box-description-blog::after {
-      content: "";
-      position: absolute;
-      right: 225px;
-      top: 50%;
-      width: 30px;
-      height: 30px;
-      margin-top: -71px;
-      background: #fff;
-      transform: rotate(45deg);
-    }
-
-
-  }
+}
 }
