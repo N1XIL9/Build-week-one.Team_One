@@ -136,8 +136,14 @@ nav ul li a {
     width: 100%;
   }
 
-  .d-block {
-    width: 50%;
+  .container-flex-carousel {
+    display: inline-block;
+    overflow: auto;
+  }
+
+  .carousel-item {
+    width: 35%;
+    height: 35%;
   }
 }
 
