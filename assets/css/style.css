@@ -324,7 +324,7 @@ nav ul li {
 #menu_price_title {
   font-size: 1.2rem;
   text-transform: uppercase;
-  margin-top: 15vh;
+  margin-top: 8vh;
   margin-bottom: 8vh;
 }
 
@@ -482,6 +482,7 @@ li {
 }
 
 #news_container hr{
+  width: 40%;
   opacity: 0.5;
 }
 
@@ -585,4 +586,62 @@ li {
     width: 15%;
   }
   
+}
+
+/* CONTACT US SECTION */
+
+#contacts{
+  text-align: center;
+  padding-top: 10vh;
+}
+
+#contacts h2 span{
+  font-size: 2rem;
+}
+
+
+#contacts_heading h2{
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 6vh 0;
+}
+
+#contacts_heading hr{
+  width: 40%;
+}
+
+#contacts_heading h3{
+  text-align: left;
+  font-size: 1.2rem;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+}
+
+#contacts_heading h3 span{
+  font-size: 1.3rem;
+}
+
+#form input, #form textarea{
+  display: block;
+}
+
+#form input{
+  width: 96%;
+  height: 6vh;
+  padding-left: 2vh;
+  margin-bottom: 2.5vh;
+}
+
+#form textarea{
+  width: 99%;
+}
+
+#contacts button{
+  background: #FF4F02;
+    color: #fff;
+    font-weight: 600;
+    border: 0px;
+    width: 92%;
+    height: 8vh;
+    margin-top: 5vh;
 }
