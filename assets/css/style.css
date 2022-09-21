@@ -1,4 +1,5 @@
-/* SECTION MENU */
+/*HOME*/
+
 #home {
   height: 100vh;
 }
@@ -6,8 +7,8 @@
 header {
   height: 30%;
   width: 100%;
-  background-image: url(../images/header.jpg);
-  background-size: contain;
+  background-image: url("../images/overlay-pattern2.png"), url("../images/header.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -16,29 +17,34 @@ header {
   margin-bottom: 1.5rem;
 }
 
+#title-logo {
+  color: #9d8e71;
+}
+
 nav {
-  height: 50%;
+  height: 30%;
   width: 90%;
   background-color: #fff;
   opacity: 0.8;
   display: flex;
-  align-items: baseline;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
   position: absolute;
   bottom: 0;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding: 0.5rem;
+  z-index: 100;
 }
 
 nav ul {
   position: absolute;
-  top: 53%;
+  top: 100%;
   width: 100%;
   /* text-align: center; */
   background-color: white;
   line-height: 1.5;
   transition: all 0.5s;
   display: none;
+  padding: 0;
 }
 
 nav ul li {
@@ -47,11 +53,16 @@ nav ul li {
   z-index: 5;
 }
 
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
 #check {
   display: none;
 }
 
-#check:checked~ul {
+#check:checked ~ ul {
   display: block;
   bottom: -100;
 }
@@ -78,11 +89,6 @@ nav ul li {
   justify-content: space-between;
 }
 
-.fa-angle-right {
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-}
-
 .arrow:focus {
   outline: none;
 }
@@ -92,24 +98,13 @@ nav ul li {
   cursor: pointer;
 }
 
-.gallery {
-  width: 85%;
-  overflow: hidden;
-  border-radius: 0.2rem;
-}
+/* .carousel-indicators {
+  bottom: -50px;
+  color: #ff530a;
+} */
 
-.gallery ul {
-  height: 30vh;
-  width: 9999px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  transition: margin-left 250ms;
-  font-size: 0;
-}
-
-.gallery li {
-  display: inline-block;
+.carousel {
+  z-index: 1;
 }
 
 /* SECTION ABOUT US  */
@@ -147,12 +142,98 @@ nav ul li {
   color: grey;
 }
 
+@media screen and (min-width: 768px) {
+  /*HOME*/
+  header {
+    background-size: cover;
+    height: 50%;
+  }
 
+  nav {
+    height: 24%;
+    display: flex;
+    padding: 1rem;
+  }
+
+  nav ul {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  /*CAROUSEL*/
+  #carousel {
+    width: 100%;
+  }
+
+  .container-flex-carousel {
+    display: inline-block;
+    overflow: auto;
+  }
+
+  .carousel-item {
+    width: 35%;
+    height: 35%;
+  }
+
+  /* ABOUT US */
+  #about-us {
+    background-color: #f6f6f6;
+    padding-bottom: 100px;
+  }
+
+  #about-us h1 {
+    font-size: 1.8em;
+  }
+
+  #about-us hr {
+    width: 110px;
+  }
+
+  /* BLOG */
+  .flex-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #section-blog .layer {
+    max-width: 50%;
+  }
+
+  #section-blog img {
+    width: 50%;
+  }
+
+  .flex-box {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* ABOUT US  */
+  #about-us h1 {
+    font-size: 2em;
+  }
+
+  #about-us hr {
+    width: 110px;
+  }
+}
 
 /* SECTION BLOG  */
 
 #section-blog {
-  background-image: url('../images/overlay-pattern2.png'), url('../images/blog/blog-bg.jpg');
+  background-image: url("../images/overlay-pattern2.png"), url("../images/blog/blog-bg.jpg");
   text-align: center;
   background-attachment: fixed;
   padding-bottom: 220px;
@@ -201,11 +282,9 @@ nav ul li {
   margin-top: 0;
 }
 
-
 .tophtre {
   padding-top: 30px;
 }
-
 
 .box-description-blog h3:nth-of-type(1) {
   margin-top: 20px;
@@ -220,7 +299,7 @@ nav ul li {
 }
 
 .section-blog-button button {
-  font-family: 'first-font';
+  font-family: "first-font";
   margin-top: 45px;
   background-color: #ff530a;
   padding: 32px;
@@ -238,12 +317,9 @@ nav ul li {
 
 /* TRANSITION BLOG */
 
-
 .flex-box-blog img:hover {
-
   transform: scale(1.2) rotate(10deg);
   transition: 0.8s ease-out;
-
 }
 
 .box-img-blog {
@@ -299,7 +375,7 @@ nav ul li {
 
 @media screen and (min-width: 1024px) {
   #block_p {
-    padding: 6vh 20vh
+    padding: 6vh 20vh;
   }
 }
 
@@ -365,24 +441,19 @@ li {
 }
 
 @media screen and (min-width: 0px) {
-
   .bottom_border {
     display: none;
   }
-
 }
 
 @media screen and (min-width: 768px) {
-
   li span {
     float: right;
     padding-top: 0;
   }
 }
 
-
 @media screen and (min-width: 768px) {
-
   .bottom_border {
     width: 100%;
     display: block;
@@ -426,7 +497,6 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-
   #menu_btn {
     padding: 5vh 15vh;
   }
@@ -440,7 +510,7 @@ li {
 /* START NEWS SECTION */
 
 #news {
-  font-family: 'first-font';
+  font-family: "first-font";
   width: 100%;
   margin-top: 12vh;
   text-align: center;
@@ -484,7 +554,7 @@ li {
 }
 
 #news_form input {
-  font-family: 'first-font';
+  font-family: "first-font";
   font-size: 1rem;
   width: 100%;
   background: #fff;
@@ -497,8 +567,8 @@ li {
 }
 
 #news_btn_container button {
-  font-family: 'first-font';
-  background-color: #7EC3BB;
+  font-family: "first-font";
+  background-color: #7ec3bb;
   color: white;
   font-size: 1.1rem;
   font-weight: bold;
@@ -521,8 +591,7 @@ li {
 
 /* NEWS MEDIAQUERY */
 
-@media screen and (min-width:768px) {
-
+@media screen and (min-width: 768px) {
   #news_container h2 {
     font-size: 2.5rem;
   }
@@ -551,11 +620,9 @@ li {
   #news hr {
     width: 20%;
   }
-
 }
 
-@media screen and (min-width:1024px) {
-
+@media screen and (min-width: 1024px) {
   #news_container {
     padding: 20vh 2vh 10vh 2vh;
   }
@@ -571,7 +638,6 @@ li {
   #news hr {
     width: 15%;
   }
-
 }
 
 /* CONTACT US SECTION */
@@ -584,7 +650,6 @@ li {
 #contacts h2 span {
   font-size: 2rem;
 }
-
 
 #contacts_heading h2 {
   text-align: center;
@@ -624,20 +689,18 @@ li {
 }
 
 #contacts button {
-  background: #FF4F02;
+  background: #ff4f02;
   color: #fff;
   font-weight: 600;
   border: 0px;
   width: 92%;
   height: 8vh;
   margin-top: 5vh;
-
 }
 
 /* MEDIA QUERY */
 
 @media screen and (min-width: 768px) {
-
   /* ABOUT US */
   #about-us {
     background-color: #f6f6f6;
@@ -667,14 +730,12 @@ li {
     flex-wrap: wrap;
   }
 
-
   .flex-box-blog {
     padding-bottom: 0px;
   }
 
   .box-img-blog {
     max-width: 50%;
-
   }
 
   .box-description-blog {
@@ -724,12 +785,10 @@ li {
 
   .box-description-blog {
     position: relative;
-
   }
 
   .box-description-blog-sx {
     position: relative;
-
   }
 
   .box-description-blog::after {
@@ -755,11 +814,9 @@ li {
     background: #fff;
     transform: rotate(45deg);
   }
-
 }
 
 @media screen and (min-width: 1024px) {
-
   /* ABOUT US  */
   #about-us h2 {
     font-size: 2em;
@@ -794,7 +851,6 @@ li {
 
   .box-description-blog {
     position: relative;
-
   }
 
   .box-description-blog::after {

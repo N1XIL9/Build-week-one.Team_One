@@ -8,6 +8,8 @@
   <script src="https://kit.fontawesome.com/228474511d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/master.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Document</title>
 </head>
@@ -18,14 +20,14 @@
     <header>
 
       <nav>
-        <img src="./assets/images/logo.png" alt="LOGO">
+        <h1 id="title-logo">Restaurant's</h1>
 
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
           <i class="fa-solid fa-bars"></i>
         </label>
         <ul>
-          <li><a href="">HOME</a></li>
+          <li><a href="#">HOME</a></li>
           <li><a href="">ABOUT US</a></li>
           <li><a href="">BLOG</a></li>
           <li><a href="">MENU</a></li>
@@ -38,215 +40,276 @@
     <!-- MAIN -->
     <main>
       <!-- SECTION CAROSELLO -->
-      <div id="carousel">
+
+      <section class="carousel">
 
         <div id="carousel-title">
           <h3>FEATURED <span>WORKS</span></h3>
           <button class="arrow next"><i class="fa fa-angle-right"></i></button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="gallery">
-          <ul>
-            <li><img src="./assets/images/slider/slider-img-1.jpg" alt="carousel img"></li>
-            <li><img src="./assets/images/slider/slider-img-2.jpg" alt="carousel img"></li>
-            <li><img src="./assets/images/slider/slider-img-3.jpg" alt="carousel img"></li>
-            <li><img src="./assets/images/slider/slider-img-4.jpg" alt="carousel img"></li>
-            <li><img src="./assets/images/slider/slider-img-1.jpg" alt="carousel img"></li>
-            <li><img src="./assets/images/slider/slider-img-2.jpg" alt="carousel img"></li>
-            <li><img src="./assets/images/slider/slider-img-3.jpg" alt="carousel img"></li>
-            <li><img src="./assets/images/slider/slider-img-4.jpg" alt="carousel img"></li>
-          </ul>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+              aria-label="Slide 4"></button>
+
+          </div>
+          <div class="carousel-inner container-flex-carousel">
+            <div class="carousel-item active">
+              <img src="./assets/images/slider/slider-img-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/slider/slider-img-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/slider/slider-img-3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/slider/slider-img-4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/slider/slider-img-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/slider/slider-img-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/slider/slider-img-3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/slider/slider-img-4.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+
         </div>
-      </div>
-  </section>
-  <!-- SECTION ABOUT US -->
+      </section>
+      <!-- SECTION ABOUT US -->
 
-  <section id="about-us">
-    <div>
-      <img src="./assets/images/cooker-img.png" alt="">
-      <h2>Your <span>Restaurant’s</span></h2>
-      <h2>Website Has To Look <span>Good</span></h2>
-      <hr>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
-    </div>
-  </section>
-
-  <!-- SECTION BLOG  -->
-  <section id="section-blog">
-    <h2>Latest <span>From</span> the <span>Blog</span></h2>
-    <hr />
-
-    <div class="flex-box-blog">
-      <div class="box-img-blog">
-        <img src="./assets/images/blog/blog-img-1.jpg" alt="blog-img-1" />
-      </div>
-
-      <div class="box-description-blog">
-        <h3>
-          Homestyle <br class="br-blog"> Chicken Pot Pie
-        </h3>
-        <hr />
-        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-      </div>
-
-
-
-      <div class="box-img-blog">
-        <img src="./assets/images/blog/blog-img-2.jpg" alt="blog-img-2" />
-      </div>
-
-      <div class="box-description-blog">
-        <h3>
-          Homestyle <br class="br-blog"> Chicken Pot Pie
-        </h3>
-        <hr />
-        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-      </div>
-
-
-      <div class="box-description-blog-sx">
-        <h3 class="tophtre">
-          Homestyle <br class="br-blog"> Chicken Pot Pie
-        </h3>
-        <hr />
-        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-      </div>
-
-      <div class="box-img-blog">
-        <img src="./assets/images/blog/blog-img-3.jpg" alt="blog-img-3" />
-      </div>
-
-
-      <div class="box-description-blog-sx">
-        <h3>
-          Homestyle <br class="br-blog"> Chicken Pot Pie
-        </h3>
-        <hr />
-        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-      </div>
-
-      <div class="box-img-blog">
-        <img src="./assets/images/blog/blog-img-4.jpg" alt="blog-img-4" />
-      </div>
-
-      <div class="box-img-blog">
-        <img src="./assets/images/blog/blog-img-5.jpg" alt="blog-img-5" />
-      </div>
-
-      <div class="box-description-blog">
-        <h3>
-          Homestyle <br class="br-blog"> Chicken Pot Pie
-        </h3>
-        <hr />
-        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-      </div>
-
-      <div class="box-img-blog">
-        <img src="./assets/images/blog/blog-img-6.jpg" alt="blog-img-6" />
-      </div>
-
-      <div class="box-description-blog">
-        <h3>
-          Homestyle <br class="br-blog"> Chicken Pot Pie
-        </h3>
-        <hr />
-        <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-      </div>
-
-
-    </div>
-
-    <div class="section-blog-button">
-      <button><a href="#">MORE INFO</a></button>
-    </div>
-  </section>
-
-  <!-- SECTION MENU    -->
-  <section id="menu_price">
-
-    <div id="menu_container">
-      <h2>our <span>MENU</span> the <span>PRICE</span></h2>
-       <hr>
-       <p id="block_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id, delectus unde minima modi officiis iure omnis illum porro voluptates aspernatur autem dolorem itaque obcaecati non inventore maxime excepturi quam.</p>
-
-    </div>
-
-    <h3 id="menu_price_title">featured <span>on the week</span></h3>
-    <ul>
-      <li>
-        <h3>Pancakes n' Such<span>$ 25.00</span><div class="bottom_border"></div></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus velit enim. Debitis ullam consectetur natus quo ratione</p>
-      </li>
-      <li>
-        <h3>Homestyle Chicken Pot Pie<span>$ 10.00</span><div class="bottom_border"></div></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus velit enim. Debitis ullam consectetur natus quo ratione</p>
-      </li>
-      <li>
-        <h3>Cereal, Panecillos y Frutas<span>$ 5.00</span><div class="bottom_border"></div></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus velit enim. Debitis ullam consectetur natus quo ratione</p>
-      </li>
-      <li>
-        <h3>Meat of Skewers<span>$ 15.00</span><div class="bottom_border"></div></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus velit enim. Debitis ullam consectetur natus quo ratione</p>
-      </li>
-      <li>
-        <h3>Steak with a Garlic and Parsley Risotto<span>$ 75.00</span><div class="bottom_border"></div></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus velit enim. Debitis ullam consectetur natus quo ratione</p>
-      </li>
-      <li>
-        <h3>Caesar Salad<span>$ 7.00</span><div class="bottom_border"></div></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus velit enim. Debitis ullam consectetur natus quo ratione</p>
-      </li>
-    </ul>
-    <div class="btn_container">
-     <a href="#" id="menu_btn">MORE INFO</a>
-    </div>
-  </section>
-
-  <!-- NEWS SECTION -->
-
-  <section id="news">
-    <div id="news_container">
-      <h2>SUBSCRIBE <span>to our</span> NEWSLETTER</h2>
-      <hr>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam ex omnis</p>
-
-      <div id="news_form">
-        <input type="email" placeholder="Enter your email to subscribe...">
-      
-        <div id="news_btn_container">
-          <button type="submit">SUBSCRIBE</button>
+      <section id="about-us">
+        <div>
+          <img src="./assets/images/cooker-img.png" alt="">
+          <h2>Your <span>Restaurant’s</span></h2>
+          <h2>Website Has To Look <span>Good</span></h2>
+          <hr>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
         </div>
+      </section>
+
+      <!-- SECTION BLOG  -->
+      <section id="section-blog">
+        <h2>Latest <span>From</span> the <span>Blog</span></h2>
+        <hr />
+
+        <div class="flex-box-blog">
+          <div class="box-img-blog">
+            <img src="./assets/images/blog/blog-img-1.jpg" alt="blog-img-1" />
+          </div>
+
+          <div class="box-description-blog">
+            <h3>
+              Homestyle <br class="br-blog"> Chicken Pot Pie
+            </h3>
+            <hr />
+            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+          </div>
+
+
+
+          <div class="box-img-blog">
+            <img src="./assets/images/blog/blog-img-2.jpg" alt="blog-img-2" />
+          </div>
+
+          <div class="box-description-blog">
+            <h3>
+              Homestyle <br class="br-blog"> Chicken Pot Pie
+            </h3>
+            <hr />
+            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+          </div>
+
+
+          <div class="box-description-blog-sx">
+            <h3 class="tophtre">
+              Homestyle <br class="br-blog"> Chicken Pot Pie
+            </h3>
+            <hr />
+            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+          </div>
+
+          <div class="box-img-blog">
+            <img src="./assets/images/blog/blog-img-3.jpg" alt="blog-img-3" />
+          </div>
+
+
+          <div class="box-description-blog-sx">
+            <h3>
+              Homestyle <br class="br-blog"> Chicken Pot Pie
+            </h3>
+            <hr />
+            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+          </div>
+
+          <div class="box-img-blog">
+            <img src="./assets/images/blog/blog-img-4.jpg" alt="blog-img-4" />
+          </div>
+
+          <div class="box-img-blog">
+            <img src="./assets/images/blog/blog-img-5.jpg" alt="blog-img-5" />
+          </div>
+
+          <div class="box-description-blog">
+            <h3>
+              Homestyle <br class="br-blog"> Chicken Pot Pie
+            </h3>
+            <hr />
+            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+          </div>
+
+          <div class="box-img-blog">
+            <img src="./assets/images/blog/blog-img-6.jpg" alt="blog-img-6" />
+          </div>
+
+          <div class="box-description-blog">
+            <h3>
+              Homestyle <br class="br-blog"> Chicken Pot Pie
+            </h3>
+            <hr />
+            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+          </div>
+
+
+        </div>
+
+        <div class="section-blog-button">
+          <button><a href="#">MORE INFO</a></button>
+        </div>
+      </section>
+
+      <!-- SECTION MENU    -->
+      <section id="menu_price">
+
+        <div id="menu_container">
+          <h2>our <span>MENU</span> the <span>PRICE</span></h2>
+          <hr>
+          <p id="block_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id, delectus unde minima modi
+            officiis iure omnis illum porro voluptates aspernatur autem dolorem itaque obcaecati non inventore maxime
+            excepturi quam.</p>
+
+        </div>
+
+        <h3 id="menu_price_title">featured <span>on the week</span></h3>
+        <ul>
+          <li>
+            <h3>Pancakes n' Such<span>$ 25.00</span>
+              <div class="bottom_border"></div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
+              velit enim. Debitis ullam consectetur natus quo ratione</p>
+          </li>
+          <li>
+            <h3>Homestyle Chicken Pot Pie<span>$ 10.00</span>
+              <div class="bottom_border"></div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
+              velit enim. Debitis ullam consectetur natus quo ratione</p>
+          </li>
+          <li>
+            <h3>Cereal, Panecillos y Frutas<span>$ 5.00</span>
+              <div class="bottom_border"></div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
+              velit enim. Debitis ullam consectetur natus quo ratione</p>
+          </li>
+          <li>
+            <h3>Meat of Skewers<span>$ 15.00</span>
+              <div class="bottom_border"></div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
+              velit enim. Debitis ullam consectetur natus quo ratione</p>
+          </li>
+          <li>
+            <h3>Steak with a Garlic and Parsley Risotto<span>$ 75.00</span>
+              <div class="bottom_border"></div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
+              velit enim. Debitis ullam consectetur natus quo ratione</p>
+          </li>
+          <li>
+            <h3>Caesar Salad<span>$ 7.00</span>
+              <div class="bottom_border"></div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
+              velit enim. Debitis ullam consectetur natus quo ratione</p>
+          </li>
+        </ul>
+        <div class="btn_container">
+          <a href="#" id="menu_btn">MORE INFO</a>
+        </div>
+      </section>
+
+      <!-- NEWS SECTION -->
+
+      <section id="news">
+        <div id="news_container">
+          <h2>SUBSCRIBE <span>to our</span> NEWSLETTER</h2>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam ex omnis</p>
+
+          <div id="news_form">
+            <input type="email" placeholder="Enter your email to subscribe...">
+
+            <div id="news_btn_container">
+              <button type="submit">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT US SECTION -->
+
+      <section id="contacts">
+        <div id="contacts_heading">
+          <h2>our <span>CONTACT US</span> </h2>
+          <hr>
+          <h3>SIGN UP FOR <span>EMAIL ALERTS</span></h3>
+        </div>
+
+        <div id="form">
+          <input type="text" name="name" id="input_name" placeholder="Write your full name here...">
+          <input type="email" name="email" id="input_email" placeholder="Write your email address here...">
+          <textarea name="text" id="text_area" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+        </div>
+
+        <button type="submit">SEND YOUR MESSAGE</button>
+
+      </section>
+
+
       </div>
-    </div>
-  </section>
-
-  <!-- CONTACT US SECTION -->
-
-  <section id="contacts">
-    <div id="contacts_heading">
-    <h2>our <span>CONTACT US</span> </h2>
-     <hr>
-     <h3>SIGN UP FOR <span>EMAIL ALERTS</span></h3>
-    </div>
-
-    <div id="form">
-     <input type="text" name="name" id="input_name" placeholder="Write your full name here...">
-     <input type="email" name="email" id="input_email" placeholder="Write your email address here...">
-     <textarea name="text" id="text_area" cols="30" rows="10" placeholder="Write your message here..."></textarea>
-    </div>
-     
-    <button type="submit">SEND YOUR MESSAGE</button>
-
-  </section>
-
-
-  </div>
-  </main>
-  <script src="./assets/Js/script.js"></script>
+    </main>
+    <script src="./assets/Js/script.js"></script>
 </body>
 
 </html>
