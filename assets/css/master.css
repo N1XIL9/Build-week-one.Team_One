@@ -1,43 +1,45 @@
 /* GENERALI */
 @font-face {
-    font-family: 'first-font';
-    src: url('../fonts/ufonts.com_tw-cen-mt.ttf');
+  font-family: "first-font";
+  src: url("../fonts/ufonts.com_tw-cen-mt.ttf");
 }
-
+* {
+  box-sizing: border-box;
+}
 /* FONT FAMILY  */
 body {
-    font-family: 'first-font';
+  font-family: "first-font";
 }
 
 /* DIMENSIONE BASE SECTIONS  */
 section {
-    width: 100%;
+  width: 100%;
 }
 
 /* DIMENSIONE BASE DIV  */
 div {
-    width: 85%;
-    margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
 }
 
 /* TITOLI  */
 h1,
 h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 
 h1 span,
 h2 span {
-    font-size: 3rem;
-    font-weight: 600;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 h3 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 /* SPAN  */
 span {
-    color: #ff530a;
+  color: #ff530a;
 }
