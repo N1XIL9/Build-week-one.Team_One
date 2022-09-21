@@ -342,7 +342,7 @@ li p {
 }
 
 ul {
-  margin-bottom: 12vh;
+  margin-bottom: 5vh;
 }
 
 li div {
@@ -421,7 +421,7 @@ li {
 
 /* MENU BUTTON */
 
-#btn_container{
+.btn_container{
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -435,7 +435,7 @@ li {
   background-color: white;
   border: 1px solid #ff530a;
   color: #ff530a;
-  padding: 5vh 15vh;
+  padding: 4vh 12vh;
   transition: 0.5s;
 }
 
@@ -454,20 +454,135 @@ li {
 /* START NEWS SECTION */
 
 #news{
+  font-family: 'first-font';
   width: 100%;
-  padding: 100px 0px;
   margin-top: 12vh;
   text-align: center;
-  background: url(../images/subscribe-bg.jpg);
+  background: url(../images/overlay-pattern2.png), url(../images/subscribe-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
+#news_container{
+  width: 92%;
+  padding: 15vh 2vh 10vh 2vh;
+}
+
 #news_container span{
   color: #ff530a;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 #news_container h2{
+  font-size: 1.9rem;
   color: white;
+  padding-bottom: 6vh;
+}
+
+#news_container hr{
+  opacity: 0.5;
+}
+
+#news_container p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  padding: 4vh 0;
+}
+
+#news_form{
+  margin:0;
+}
+
+#news_form input{
+  font-family: 'first-font';
+  font-size: 1rem;
+  width: 100%;
+  background: #fff;
+  color: #9d9d9d;
+  opacity: 0.9;
+  border: none;
+  height: 7vh;
+  margin-bottom: 3vh;
+  padding-left: 2vh;
+}
+
+#news_btn_container button{
+  font-family: 'first-font';
+  background-color: #7EC3BB;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 25vh;
+  height: 7vh;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#news_btn_container button:hover{
+  background-color:#5e8f89;
+}
+
+#news_btn_container{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+/* NEWS MEDIAQUERY */
+
+@media screen and (min-width:768px) {
+  
+  #news_container h2{
+    font-size: 2.5rem;
+  }
+
+  #news_container span{
+    font-size: 3rem;
+  }
+
+  #news_form{
+    display: inline-flex;
+    width:100%;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  #news_form input{
+    width: 190%;
+    height: 7.7vh;
+    margin-left: 5vh;
+  }
+
+  #news_btn_container button{
+    height: 8vh;
+  }
+
+  #news hr{
+    width: 20%;
+  }
+  
+}
+
+@media screen and (min-width:1024px) {
+
+  #news_container{
+    padding: 20vh 2vh 10vh 2vh;
+  }
+
+  #news_form{
+    width: 90%;
+  }
+
+  #news_form input{
+    width: 165%;
+  }
+
+  #news hr{
+    width: 15%;
+  }
+  
 }
