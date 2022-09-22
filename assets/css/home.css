@@ -99,9 +99,9 @@ nav ul li a {
 .carousel {
   z-index: 1;
 }
-/* #carousel-query {
+#carousel-query {
   display: none;
-} */
+}
 
 @media screen and (min-width: 768px) {
   /*HOME*/
@@ -149,6 +149,10 @@ nav ul li a {
 
   #carouselExampleIndicators {
     display: none;
+  }
+
+  #carousel-query {
+    display: inline-block;
   }
 
   .carousel-inner {
