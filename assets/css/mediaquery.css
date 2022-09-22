@@ -531,4 +531,13 @@
         max-width:1771px;
         width: 90%;
     }
+
+    #news_form input {
+        width: 40%;
+    }
+
+    #news_btn_container button {
+        width: 16vw
+    }
+   
 }
