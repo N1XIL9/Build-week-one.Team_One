@@ -57,19 +57,60 @@ nav ul li a {
   line-height: 2.5;
   font-weight: 500;
 }
-nav ul li a::before {
-  content: "";
-  position: absolute;
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
-  transition: 0.3s all;
-  height: 2px;
+
+ul li:first-child {
+  width: 98%;
+  border-bottom: 3px solid #ff4f02;
 }
 
-nav ul li a:hover::before {
-  position: absolute;
-  background-color: #ff530a;
-  width: 90%;
+.home-li-about:hover {
+  border-bottom: 3px solid #ff530a;
+  width: 98%;
+  animation-name: loading;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+}
+
+.home-li-blog:hover {
+  border-bottom: 3px solid #ff530a;
+  width: 98%;
+  animation-name: loading;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+}
+
+.home-li-menu:hover {
+  border-bottom: 3px solid #ff530a;
+  width: 98%;
+  animation-name: loading;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+}
+
+.home-li-news:hover {
+  border-bottom: 3px solid #ff530a;
+  width: 98%;
+  animation-name: loading;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+}
+
+.home-li-contacts:hover {
+  border-bottom: 3px solid #ff530a;
+  width: 98%;
+  animation-name: loading;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 98%;
+  }
 }
 
 #check {
@@ -104,10 +145,6 @@ nav ul li a:hover::before {
 #btn-next {
   border: none;
   background-color: white;
-}
-
-.arrow:hover {
-  cursor: pointer;
 }
 
 .slideshow-container-query {
@@ -154,7 +191,8 @@ nav ul li a:hover::before {
 }
 
 .dot,
-.dot-query {
+.dot-query,
+.dot-query-bis {
   cursor: pointer;
   height: 0.8rem;
   width: 0.8rem;
@@ -167,7 +205,8 @@ nav ul li a:hover::before {
 }
 
 .dot:hover,
-.dot-query:hover {
+.dot-query:hover,
+.dot-query-bis:hover {
   background-color: #ff530a;
 }
 
@@ -639,6 +678,55 @@ nav ul li a:hover::before {
     color: black;
   }
 
+  ul li:first-child {
+    width: auto;
+    border-bottom: none;
+  }
+
+  .home-li-home a {
+    border-bottom: 3px solid #ff4f02;
+  }
+
+  .home-li-about:hover {
+    width: auto;
+    animation-name: loading;
+    animation-duration: 0.1s;
+  }
+
+  .home-li-blog:hover {
+    width: auto;
+    animation-name: loading;
+    animation-duration: 0.1s;
+  }
+
+  .home-li-menu:hover {
+    width: auto;
+    animation-name: loading;
+    animation-duration: 0.1s;
+  }
+
+  .home-li-news:hover {
+    width: auto;
+    animation-name: loading;
+    animation-duration: 0.1s;
+  }
+
+  .home-li-contacts:hover {
+    width: auto;
+    animation-name: loading;
+    animation-duration: 0.1s;
+  }
+
+  @keyframes loading {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: auto;
+    }
+  }
+
   .fa-bars {
     display: none;
   }
@@ -934,7 +1022,7 @@ nav ul li a:hover::before {
     display: none;
   }
   #dot-slider-query {
-    display: block;
+    display: none;
   }
   #dot-slider-query-bis {
     display: block;
