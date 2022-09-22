@@ -4,14 +4,6 @@
     src: url("../fonts/ufonts.com_tw-cen-mt.ttf");
 }
 
-hr {
-    margin: unset;
-    color: unset;
-    background-color: unset;
-    border: unset;
-    opacity: unset;
-}
-
 /* FONT FAMILY  */
 body {
     font-family: "first-font";
