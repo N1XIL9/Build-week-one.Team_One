@@ -1013,32 +1013,3 @@ nav ul li a {
     width: 55%;
   }
 }
-
-/* ANIMATION FADE */
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 0.8s all ease;
-}
-
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.active.fade-left {
-  animation: fade-left 0.8s ease-in;
-}
-
-@keyframes fade-left {
-  0% {
-    transform: translateX(-150px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
