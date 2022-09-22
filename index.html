@@ -43,7 +43,7 @@
 
         <div id="carousel-title">
           <h3>FEATURED <span>WORKS</span></h3>
-          <button class="next " onclick="plusSlides(1)"><i class="fa fa-angle-right"></i></button>
+          <a class="next " onclick="plusSlides(1)"><i class="fa fa-angle-right"></i></a>
         </div>
 
         <div class="mySlides fade">
@@ -68,7 +68,7 @@
       </div>
       <br>
 
-      <div style="text-align:center">
+      <div id="dot-slider">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
@@ -79,11 +79,11 @@
 
         <div id="carousel-title">
           <h3>FEATURED <span>WORKS</span></h3>
-          <button class="next " onclick="plusSlides(1)"><i class="fa fa-angle-right"></i></button>
+          <button class="next " onclick="plusSlidesQuery(1)"><i class="fa fa-angle-right"></i></button>
         </div>
         <div class="container-slides-query">
 
-          <div class="mySlides fade">
+          <div class="mySlides-query fade">
             <div class="numbertext">1 / 4</div>
             <img src="./assets/images/slider/slider-img-1.jpg">
             <img src="./assets/images/slider/slider-img-2.jpg">
@@ -91,28 +91,33 @@
 
 
 
-          <div class="mySlides fade">
+          <div class="mySlides-query fade">
             <div class="numbertext">2 / 4</div>
             <img src="./assets/images/slider/slider-img-3.jpg">
             <img src="./assets/images/slider/slider-img-4.jpg">
           </div>
 
-          <div class="mySlides fade">
+          <div class="mySlides-query fade">
             <div class="numbertext">3 / 4</div>
             <img src="./assets/images/slider/slider-img-1.jpg">
             <img src="./assets/images/slider/slider-img-2.jpg">
           </div>
 
-          <div class="mySlides fade">
+          <div class="mySlides-query fade">
             <div class="numbertext">4 / 4</div>
             <img src="./assets/images/slider/slider-img-3.jpg">
             <img src="./assets/images/slider/slider-img-4.jpg">
           </div>
         </div>
+        <br>
 
-
+        <div id="dot-slider-query">
+          <span class="dot-query" onclick="currentSlideQuery(1)"></span>
+          <span class="dot-query" onclick="currentSlideQuery(2)"></span>
+          <span class="dot-query" onclick="currentSlideQuery(3)"></span>
+          <span class="dot-query" onclick="currentSlideQuery(4)"></span>
+        </div>
       </div>
-      <br>
 
       <!-- SECTION ABOUT US -->
 
@@ -323,9 +328,6 @@
 
       </section>
     </main>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script> -->
     <script src="./assets/Js/script.js"></script>
 </body>
 
