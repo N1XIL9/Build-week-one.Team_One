@@ -148,6 +148,7 @@ nav ul li a {
   text-align: center;
   background-attachment: fixed;
   padding-bottom: 220px;
+  background-size: cover;
 }
 
 #section-blog h2 {
@@ -1134,4 +1135,9 @@ nav ul li a {
   #section-footer-container-info {
     margin-left: 22px;
   }
+}
+
+@media screen {
+  min-width: 1440px;
+
 }
