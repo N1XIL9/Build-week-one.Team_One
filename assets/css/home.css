@@ -99,6 +99,9 @@ nav ul li a {
 .carousel {
   z-index: 1;
 }
+/* #carousel-query {
+  display: none;
+} */
 
 @media screen and (min-width: 768px) {
   /*HOME*/
@@ -142,5 +145,16 @@ nav ul li a {
   .carousel-item {
     width: 35%;
     height: 35%;
+  }
+
+  #carouselExampleIndicators {
+    display: none;
+  }
+
+  .carousel-inner {
+    display: none;
+  }
+  #container-flex-carousel {
+    display: flex;
   }
 }
