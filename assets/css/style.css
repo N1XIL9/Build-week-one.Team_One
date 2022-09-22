@@ -51,15 +51,26 @@ nav ul li {
   z-index: 5;
 }
 
-nav ul li a {
+nav li a {
   color: black;
   text-decoration: none;
   line-height: 2.5;
   font-weight: 500;
 }
+nav li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  height: 2px;
+}
 
-nav ul li a:hover {
-  border-bottom: 2px solid #ff530a;
+nav li a:hover::before {
+  position: absolute;
+  background-color: #ff530a;
+  width: 90%;
 }
 
 #check {
