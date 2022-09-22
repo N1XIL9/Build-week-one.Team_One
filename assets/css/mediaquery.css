@@ -478,10 +478,12 @@
     display: flex;
     justify-content: flex-end;
     width: 89%;
+    padding-left: 8vh;
   }
 
   #contact_btn_container button {
     width: 55%;
+    margin-right: 1vh;
   }
 
   /* FOOTER  */
@@ -496,6 +498,8 @@
     flex-direction: column;
   }
 
+
+  /* FOOTER */
   .br-footer {
     display: none;
   }
