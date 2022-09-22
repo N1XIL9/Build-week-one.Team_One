@@ -353,7 +353,7 @@ nav ul li a {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-top: 8vh;
-  margin-bottom: 8vh;
+  margin-bottom: 6vh;
 }
 
 /* MENU LIST  */
@@ -370,7 +370,7 @@ nav ul li a {
 }
 
 #menu_list ul {
-  margin-bottom: 5vh;
+  margin-bottom: 6vh;
 }
 
 #menu_list li div {
@@ -378,8 +378,8 @@ nav ul li a {
 }
 
 #menu_list li span {
-  font-size: 1rem;
-  padding-top: 2vh;
+  font-size: 0.8rem;
+  padding: 1.5vh 0vh 1vh 0vh;
   color: #938463;
   display: block;
 }
@@ -422,7 +422,7 @@ nav ul li a {
   background-color: white;
   border: 1px solid #ff530a;
   color: #ff530a;
-  padding: 4vh 12vh;
+  padding: 3.8vh 11.3vh;
   transition: 0.5s;
 }
 
@@ -446,7 +446,7 @@ nav ul li a {
 
 #news_container {
   width: 92%;
-  padding: 15vh 2vh 10vh 2vh;
+  padding: 15.5vh 2vh 13vh 2vh;
 }
 
 #news_container span {
@@ -458,7 +458,7 @@ nav ul li a {
 #news_container h2 {
   font-size: 1.9rem;
   color: white;
-  padding-bottom: 6vh;
+  padding-bottom: 4.4vh;
 }
 
 #news_container hr {
@@ -467,10 +467,11 @@ nav ul li a {
 }
 
 #news_container p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.1;
   font-weight: 400;
   color: white;
-  padding: 4vh 0;
+  padding: 2vh 0;
 }
 
 #news_form {
@@ -486,7 +487,7 @@ nav ul li a {
   color: #9d9d9d;
   opacity: 0.9;
   border: none;
-  height: 9vh;
+  height: 7.7vh;
   margin-bottom: 3vh;
   padding-left: 2vh;
 }
@@ -518,7 +519,7 @@ nav ul li a {
 
 #contacts {
   text-align: center;
-  padding-top: 10vh;
+  padding-top: 6vh;
 }
 
 #contacts h2 span {
@@ -528,22 +529,22 @@ nav ul li a {
 #contacts_heading h2 {
   text-align: center;
   font-size: 1.5rem;
-  padding: 6vh 0;
+  padding: 6vh 0vh 4vh 0;
 }
 
 #contacts_heading hr {
-  width: 25%;
+  width: 37%;
 }
 
 #contacts_heading h3 {
   text-align: left;
   font-size: 1.2rem;
-  margin-top: 5vh;
-  margin-bottom: 4vh;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
 }
 
 #contacts_heading h3 span {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 #form input,
@@ -553,9 +554,9 @@ nav ul li a {
 
 #form input {
   width: 96%;
-  height: 6vh;
+  height: 5vh;
   padding-left: 2vh;
-  margin-bottom: 2.5vh;
+  margin-bottom: 1.7vh;
   color: #555;
   border: 1px solid #ccc;
 }
@@ -578,9 +579,8 @@ nav ul li a {
   font-weight: 600;
   border: 0px;
   width: 100%;
-  height: 8vh;
-  margin-top: 5vh;
-  height: 5vh;
+  height: 5.5vh;
+  margin-top: 4vh;
   padding-top: 2vh;
 }
 
@@ -796,22 +796,53 @@ nav ul li a {
   }
 
   #menu_container span {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   #menu_container h2 {
     font-size: 2rem;
-    padding: 10vh 0 5vh 0;
+    padding: 1vh 0 2vh 0;
+  }
+
+  #menu_container hr{
+    width: 17%;
+  }
+
+  #block_p{
+    padding: 1.5vh 0;
+  }
+
+  #menu_price_title{
+    margin-top: 5vh;
+    margin-bottom: 0;
+  }
+
+  #menu_list li{
+    margin: 2.4vh 0vh 1vh 0vh;
   }
 
   #menu_btn {
-    padding: 5vh 15vh;
+    font-size: 0.9rem;
+    padding: 3.5vh 11vh;
   }
 
   /* NEWS */
 
+  #news{
+    margin-top: 4vh;
+  }
+
+  #news_container {
+    padding: 15.5vh 2vh 7.5vh 2vh;
+  }
+
   #news_container h2 {
     font-size: 2.5rem;
+    padding-bottom: 4vh;
+  }
+
+  #news_container p{
+    padding: 2vh 0vh 2.5vh 0vh;
   }
 
   #news_container span {
@@ -827,7 +858,7 @@ nav ul li a {
 
   #news_form input {
     width: 60%;
-    height: 10vh;
+    height: 6.5vh;
   }
 
   #news_btn_container{
@@ -835,7 +866,8 @@ nav ul li a {
   }
 
   #news_btn_container button {
-    height: 10.5vh;
+    height: 7vh;
+    width: 24vw;
   }
 
   #news hr {
@@ -844,8 +876,12 @@ nav ul li a {
 
   /* SECTION CONTACT */
 
-  #contacts h2 span {
-    font-size: 3rem;
+  #contacts_heading h2{
+    padding: 4vh 0vh 3vh 0vh;
+  }
+
+  #contacts h2 span{
+    font-size: 2.8rem;
   }
 
   #contacts h2 {
@@ -864,6 +900,7 @@ nav ul li a {
 
   #contact_btn_container button {
     width: 72%;
+    padding-bottom: 3vh;
   }
 }
 
