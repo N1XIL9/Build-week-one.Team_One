@@ -95,6 +95,7 @@ nav ul li a:hover::before {
 #carousel-title {
   margin-top: 3.5rem;
   margin-bottom: 1.5rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -891,6 +892,66 @@ nav ul li a:hover::before {
 }
 
 @media screen and (min-width: 1024px) {
+  /*HOME*/
+  header {
+    background-size: cover;
+    height: 20%;
+  }
+
+  nav {
+    height: 15%;
+    padding-top: 1rem;
+  }
+
+  /*CAROUSEL*/
+
+  .slideshow-container {
+    display: none;
+  }
+  .slideshow-container-query {
+    display: none;
+  }
+
+  .slideshow-container-query-bis {
+    display: inline;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .container-slides-query-bis {
+    text-align: center;
+  }
+
+  .mySlides {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .next {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #aa9d84;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .mySlides img {
+    width: 40%;
+    height: 20%;
+  }
+  #dot-slider {
+    display: none;
+  }
+  #dot-slider-query {
+    display: none;
+  }
+  #dot-slider-query-bis {
+    display: block;
+    text-align: center;
+  }
+
   /* ABOUT US  */
   #about-us h2 {
     font-size: 2em;
