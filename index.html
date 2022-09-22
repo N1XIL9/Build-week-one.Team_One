@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/228474511d.js" crossorigin="anonymous"></script>
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/master.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -41,86 +39,80 @@
     <main>
       <!-- SECTION CAROSELLO -->
 
-      <section class="carousel">
+      <div class="slideshow-container">
 
         <div id="carousel-title">
           <h3>FEATURED <span>WORKS</span></h3>
-          <button class="arrow next"><i class="fa fa-angle-right"></i></button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="visually-hidden">Next</span>
-          </button>
+          <button class="next " onclick="plusSlides(1)"><i class="fa fa-angle-right"></i></button>
         </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-              aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-              aria-label="Slide 4"></button>
-
-          </div>
-          <div class="carousel-inner ">
-            <div class="carousel-item active">
-              <img src="./assets/images/slider/slider-img-1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/slider/slider-img-2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/slider/slider-img-3.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/slider/slider-img-4.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/slider/slider-img-1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/slider/slider-img-2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/slider/slider-img-3.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/slider/slider-img-4.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="./assets/images/slider/slider-img-1.jpg">
         </div>
 
-      </section>
-      <section id="carousel-query">
-
-        <div id="container-flex-carousel">
-
-          <div class="carousel-item-flex">
-            <img src="./assets/images/slider/slider-img-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item-flex">
-            <img src="./assets/images/slider/slider-img-2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item-flex">
-            <img src="./assets/images/slider/slider-img-3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item-flex">
-            <img src="./assets/images/slider/slider-img-4.jpg" class="d-block w-100" alt="...">
-          </div>
-
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="./assets/images/slider/slider-img-2.jpg">
         </div>
-      </section>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="./assets/images/slider/slider-img-3.jpg">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="./assets/images/slider/slider-img-4.jpg">
+        </div>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+      <div class="slideshow-container-query">
+
+        <div id="carousel-title">
+          <h3>FEATURED <span>WORKS</span></h3>
+          <button class="next " onclick="plusSlides(1)"><i class="fa fa-angle-right"></i></button>
+        </div>
+        <div class="container-slides-query">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="./assets/images/slider/slider-img-1.jpg">
+            <img src="./assets/images/slider/slider-img-2.jpg">
+          </div>
+
+
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="./assets/images/slider/slider-img-3.jpg">
+            <img src="./assets/images/slider/slider-img-4.jpg">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./assets/images/slider/slider-img-1.jpg">
+            <img src="./assets/images/slider/slider-img-2.jpg">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="./assets/images/slider/slider-img-3.jpg">
+            <img src="./assets/images/slider/slider-img-4.jpg">
+          </div>
+        </div>
+
+
+      </div>
+      <br>
 
       <!-- SECTION ABOUT US -->
 
@@ -334,6 +326,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script> -->
+    <script src="./assets/Js/script.js"></script>
 </body>
 
 </html>
