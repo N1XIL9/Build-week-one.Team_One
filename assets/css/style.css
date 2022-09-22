@@ -38,7 +38,6 @@ nav ul {
   position: absolute;
   top: 100%;
   width: 100%;
-  /* text-align: center; */
   background-color: white;
   line-height: 1.5;
   transition: all 0.5s;
@@ -66,7 +65,7 @@ nav ul li a {
   bottom: -100;
 }
 
-.checkbtn {
+.checkbtn-nav {
   display: block;
 }
 
@@ -93,12 +92,16 @@ nav ul li a {
 }
 
 /* .carousel-indicators {
-  bottom: -50px;
-  color: #ff530a;
-} */
+    bottom: -50px;
+    color: #ff530a;
+  } */
 
 .carousel {
   z-index: 1;
+}
+
+#carousel-query {
+  display: none;
 }
 
 /* SECTION ABOUT US  */
@@ -527,8 +530,6 @@ nav ul li a {
 /* MEDIA QUERY */
 
 @media screen and (min-width: 0px) {
-
-  /* BARRA MENU  */
   .bottom_border {
     display: none;
   }
@@ -579,6 +580,22 @@ nav ul li a {
     height: 35%;
   }
 
+  #carouselExampleIndicators {
+    display: none;
+  }
+
+  #carousel-query {
+    display: inline-block;
+  }
+
+  .carousel-inner {
+    display: none;
+  }
+
+  #container-flex-carousel {
+    display: flex;
+  }
+
   /* ABOUT US */
   #about-us {
     background-color: #f6f6f6;
@@ -612,12 +629,14 @@ nav ul li a {
     flex-wrap: wrap;
   }
 
+
   .flex-box-blog {
     padding-bottom: 0px;
   }
 
   .box-img-blog {
     max-width: 50%;
+
   }
 
   .box-description-blog {
@@ -696,7 +715,90 @@ nav ul li a {
     transform: rotate(45deg);
     z-index: 10;
   }
+
+  /* MENU */
+
+  .bottom_border {
+    width: 100%;
+    display: block;
+    float: right;
+    margin-top: 3vh;
+  }
+
+  #menu_list li h3 span {
+    float: right;
+    padding-top: 0;
+  }
+
+  #menu_container span {
+    font-size: 3rem;
+  }
+
+  #menu_container h2 {
+    font-size: 2rem;
+    padding: 10vh 0 5vh 0;
+  }
+
+  #menu_btn {
+    padding: 5vh 15vh;
+  }
+
+  /* NEWS */
+
+  #news_container h2 {
+    font-size: 2.5rem;
+  }
+
+  #news_container span {
+    font-size: 3rem;
+  }
+
+  #news_form {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  #news_form input {
+    width: 190%;
+    height: 7.7vh;
+    margin-left: 5vh;
+  }
+
+  #news_btn_container button {
+    height: 8vh;
+  }
+
+  #news hr {
+    width: 20%;
+  }
+
+  /* SECTION CONTACT */
+
+  #contacts h2 span {
+    font-size: 3rem;
+  }
+
+  #contacts h2 {
+    font-size: 2rem;
+  }
+
+  #contacts_heading hr {
+    width: 22%;
+  }
+
+  #contact_btn_container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+
+  #contact_btn_container button {
+    width: 72%;
+  }
 }
+
 
 @media screen and (min-width: 1024px) {
 
@@ -812,136 +914,13 @@ nav ul li a {
     z-index: 10;
   }
 
-  #menu_list li h3 span {
-    float: right;
-    padding-top: 0;
-  }
+  /* MENU */
 
-  #menu_container span {
-    font-size: 3rem;
-  }
-
-  #menu_container h2 {
-    font-size: 2rem;
-    padding: 10vh 0 5vh 0;
-  }
-
-  /* MENU BTN */
-  #menu_btn {
-    padding: 5vh 15vh;
+  #block_p {
+    padding: 6vh 20vh;
   }
 
   /* NEWS */
-
-  #news_container h2 {
-    font-size: 2.5rem;
-  }
-
-  #news_container span {
-    font-size: 3rem;
-  }
-
-  #news_form {
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
-    align-items: baseline;
-  }
-
-  #news_form input {
-    width: 190%;
-    height: 7.7vh;
-    margin-left: 5vh;
-  }
-
-  #news_btn_container button {
-    height: 8vh;
-  }
-
-  #news hr {
-    width: 20%;
-  }
-
-  /* SECTION CONTACT */
-
-  #contacts h2 span {
-    font-size: 3rem;
-  }
-
-  #contacts h2 {
-    font-size: 2rem;
-  }
-
-  #contacts_heading hr {
-    width: 22%;
-  }
-
-  #contact_btn_container {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-  }
-
-  #contact_btn_container button {
-    width: 72%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-
-  /* ABOUT US  */
-  #about-us h2 {
-    font-size: 2em;
-  }
-
-  #about-us hr {
-    width: 110px;
-  }
-
-  /* BLOG  */
-  #section-blog button {
-    float: right;
-    margin: 0 auto;
-  }
-
-  .box-img-blog {
-    max-width: 25%;
-    height: 212px;
-  }
-
-  .box-description-blog {
-    max-width: 25%;
-    padding-bottom: 71px;
-  }
-
-  .box-description-blog-sx {
-    max-width: 25%;
-    padding-bottom: 71px;
-  }
-
-  /* ADD TRIANGLE BOX DESCIPTION  */
-
-  .box-description-blog {
-    position: relative;
-  }
-
-  .box-description-blog::after {
-    content: "";
-    position: absolute;
-    left: -15px;
-    top: 25%;
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    transform: rotate(45deg);
-  }
-
-  /* MENU  */
-  #block_p {
-    padding: 6vh 20vh
-  }
-
-  /* NEWS  */
   #news_container {
     padding: 20vh 2vh 10vh 2vh;
   }
