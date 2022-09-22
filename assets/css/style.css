@@ -766,8 +766,11 @@ nav ul li a {
     height: 10vh;
   }
 
-  #news_btn_container button {
+  #news_btn_container{
     display: inline;
+  }
+
+  #news_btn_container button {
     height: 10.5vh;
   }
 
