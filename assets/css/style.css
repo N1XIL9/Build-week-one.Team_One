@@ -117,7 +117,7 @@ ul li:first-child {
   display: none;
 }
 
-#check:checked ~ ul {
+#check:checked~ul {
   display: block;
   bottom: -100;
 }
@@ -646,7 +646,7 @@ ul li:first-child {
 
 /* SECTION FOOTER  */
 
-#section-footer-container-info {
+.section-footer-container-info {
   margin-left: 0;
 }
 
@@ -791,3 +791,47 @@ ul li:first-child {
   margin: 5px;
 }
 
+/* ANIMATION FADE */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.8s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.active.fade-left {
+  animation: fade-left 0.8s ease-in;
+}
+
+.active.fade-top {
+  animation: fade-top 1s ease-in;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-top {
+  0% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
