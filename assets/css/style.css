@@ -621,6 +621,14 @@ nav ul li a {
   margin-left: 0;
 }
 
+/* BRAND SOCIAL BUTTON ANIMATION  */
+
+.backg-container-brands:hover {
+  background-color: #ff530a;
+  transition: 1s;
+
+}
+
 
 .fa-twitter,
 .fa-facebook-f,
@@ -1115,11 +1123,15 @@ nav ul li a {
 
   .container-info-contact {
     display: flex;
-    margin: 0 auto;
+    margin: 0;
     flex-direction: column;
   }
 
   .br-footer {
     display: none;
+  }
+
+  #section-footer-container-info {
+    margin-left: 22px;
   }
 }
