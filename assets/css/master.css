@@ -17,6 +17,7 @@ section {
 /* DIMENSIONE BASE DIV  */
 div {
     width: 92%;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
