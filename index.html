@@ -26,12 +26,12 @@
           <i class="fa-solid fa-bars"></i>
         </label>
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="">ABOUT US</a></li>
-          <li><a href="">BLOG</a></li>
-          <li><a href="">MENU</a></li>
-          <li><a href="">NEWS</a></li>
-          <li><a href="">CONTACTS</a></li>
+          <li class="home-li-home"><a href="#">HOME</a></li>
+          <li class="border-button-nav home-li-about"><a href="">ABOUT US</a></li>
+          <li class="border-button-nav home-li-blog"><a href="">BLOG</a></li>
+          <li class="border-button-nav home-li-menu"><a href="">MENU</a></li>
+          <li class="border-button-nav home-li-news"><a href="">NEWS</a></li>
+          <li class="border-button-nav home-li-contacts"><a href="">CONTACTS</a></li>
         </ul>
       </nav>
     </header>
@@ -44,26 +44,22 @@
 
         <div id="carousel-title">
           <h3>FEATURED <span>WORKS</span></h3>
-          <a class="next " onclick="plusSlides(1)"><i class="fa fa-angle-right"></i></a>
+          <button class="next " onclick="plusSlides(1)"><i class="fa fa-angle-right"></i></button>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">1 / 4</div>
           <img src="./assets/images/slider/slider-img-1.jpg">
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">2 / 4</div>
           <img src="./assets/images/slider/slider-img-2.jpg">
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">3 / 4</div>
           <img src="./assets/images/slider/slider-img-3.jpg">
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">4 / 4</div>
           <img src="./assets/images/slider/slider-img-4.jpg">
         </div>
       </div>
@@ -85,7 +81,6 @@
         <div class="container-slides-query">
 
           <div class="mySlides-query fade">
-            <div class="numbertext">1 / 4</div>
             <img src="./assets/images/slider/slider-img-1.jpg">
             <img src="./assets/images/slider/slider-img-2.jpg">
           </div>
@@ -93,19 +88,16 @@
 
 
           <div class="mySlides-query fade">
-            <div class="numbertext">2 / 4</div>
             <img src="./assets/images/slider/slider-img-3.jpg">
             <img src="./assets/images/slider/slider-img-4.jpg">
           </div>
 
           <div class="mySlides-query fade">
-            <div class="numbertext">3 / 4</div>
             <img src="./assets/images/slider/slider-img-1.jpg">
             <img src="./assets/images/slider/slider-img-2.jpg">
           </div>
 
           <div class="mySlides-query fade">
-            <div class="numbertext">4 / 4</div>
             <img src="./assets/images/slider/slider-img-3.jpg">
             <img src="./assets/images/slider/slider-img-4.jpg">
           </div>
@@ -117,6 +109,39 @@
           <span class="dot-query" onclick="currentSlideQuery(2)"></span>
           <span class="dot-query" onclick="currentSlideQuery(3)"></span>
           <span class="dot-query" onclick="currentSlideQuery(4)"></span>
+        </div>
+      </div>
+
+      <div class="slideshow-container-query-bis">
+
+        <div id="carousel-title">
+          <h3>FEATURED <span>WORKS</span></h3>
+          <button class="next " onclick="plusSlidesQueryBis(1)"><i class="fa fa-angle-right"></i></button>
+        </div>
+        <div class="container-slides-query-bis">
+
+          <div class="mySlides-query-bis fade">
+            <img src="./assets/images/slider/slider-img-1.jpg">
+            <img src="./assets/images/slider/slider-img-2.jpg">
+            <img src="./assets/images/slider/slider-img-3.jpg">
+          </div>
+
+
+
+          <div class="mySlides-query-bis fade">
+            <img src="./assets/images/slider/slider-img-4.jpg">
+            <img src="./assets/images/slider/slider-img-1.jpg">
+            <img src="./assets/images/slider/slider-img-2.jpg">
+          </div>
+
+        </div>
+        <br>
+
+        <div id="dot-slider-query-bis">
+          <span class="dot-query-bis" onclick="currentSlideQueryBis(1)"></span>
+          <span class="dot-query-bis" onclick="currentSlideQueryBis(2)"></span>
+          <span class="dot-query-bis" onclick="currentSlideQueryBis(3)"></span>
+          <span class="dot-query-bis" onclick="currentSlideQueryBis(4)"></span>
         </div>
       </div>
 
