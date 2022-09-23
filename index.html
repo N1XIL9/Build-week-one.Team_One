@@ -14,438 +14,437 @@
 </head>
 
 <body>
-  <section id="home">
-    <!-- HEADER  -->
-    <header>
+  <!-- HEADER  -->
+  <header id="home">
 
-      <nav class="sticky-home">
-        <h1 id="title-logo">Restaurant's</h1> <input type="checkbox" id="check">
-        <label for="check" class="checkbtn-nav">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        <ul>
-          <li class="border-button-nav"><a href="#">HOME</a></li>
-          <li class="border-button-nav"><a href="#about-us">ABOUT US</a></li>
-          <li class="border-button-nav"><a href="#section-blog">BLOG</a></li>
-          <li class="border-button-nav"><a href="#menu_price">MENU</a></li>
-          <li class="border-button-nav"><a href="#news">NEWS</a></li>
-          <li class="border-button-nav"><a href="#section-footer-info">CONTACTS</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- FINE HEADER  -->
-    <!-- MAIN -->
-    <main>
-      <!-- SECTION CAROSELLO -->
+    <nav class="sticky-home">
+      <h1 id="title-logo">Restaurant's</h1> <input type="checkbox" id="check">
+      <label for="check" class="checkbtn-nav">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <ul>
+        <li class="border-button-nav"><a href="#">HOME</a></li>
+        <li class="border-button-nav"><a href="#about-us">ABOUT US</a></li>
+        <li class="border-button-nav"><a href="#section-blog">BLOG</a></li>
+        <li class="border-button-nav"><a href="#menu_price">MENU</a></li>
+        <li class="border-button-nav"><a href="#news">NEWS</a></li>
+        <li class="border-button-nav"><a href="#section-footer-info">CONTACTS</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- FINE HEADER  -->
+  <!-- MAIN -->
+  <main>
+    <!-- SECTION CAROSELLO -->
 
-      <div class="slideshow-container">
+    <div class="slideshow-container">
 
-        <div id="carousel-title">
-          <h3>FEATURED <span>WORKS</span></h3>
-          <button class="next " onclick="plusSlides(1)"><i class="fa fa-angle-right"></i></button>
-        </div>
+      <div id="carousel-title">
+        <h3>FEATURED <span>WORKS</span></h3>
+        <button class="next " onclick="plusSlides(1)"><i class="fa fa-angle-right"></i></button>
+      </div>
 
-        <div class="mySlides fade">
+      <div class="mySlides fade">
+        <img src="./assets/images/slider/slider-img-1.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/images/slider/slider-img-2.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/images/slider/slider-img-3.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./assets/images/slider/slider-img-4.jpg">
+      </div>
+    </div>
+    <br>
+
+    <div id="dot-slider">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <div class="slideshow-container-query">
+
+      <div id="carousel-title">
+        <h3>FEATURED <span>WORKS</span></h3>
+        <button class="next " onclick="plusSlidesQuery(1)"><i class="fa fa-angle-right"></i></button>
+      </div>
+      <div class="container-slides-query">
+
+        <div class="mySlides-query fade">
           <img src="./assets/images/slider/slider-img-1.jpg">
-        </div>
-
-        <div class="mySlides fade">
           <img src="./assets/images/slider/slider-img-2.jpg">
         </div>
 
-        <div class="mySlides fade">
+
+
+        <div class="mySlides-query fade">
           <img src="./assets/images/slider/slider-img-3.jpg">
+          <img src="./assets/images/slider/slider-img-4.jpg">
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides-query fade">
+          <img src="./assets/images/slider/slider-img-1.jpg">
+          <img src="./assets/images/slider/slider-img-2.jpg">
+        </div>
+
+        <div class="mySlides-query fade">
+          <img src="./assets/images/slider/slider-img-3.jpg">
           <img src="./assets/images/slider/slider-img-4.jpg">
         </div>
       </div>
       <br>
 
-      <div id="dot-slider">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
+      <div id="dot-slider-query">
+        <span class="dot-query" onclick="currentSlideQuery(1)"></span>
+        <span class="dot-query" onclick="currentSlideQuery(2)"></span>
+        <span class="dot-query" onclick="currentSlideQuery(3)"></span>
+        <span class="dot-query" onclick="currentSlideQuery(4)"></span>
       </div>
+    </div>
 
-      <div class="slideshow-container-query">
+    <div class="slideshow-container-query-bis">
 
-        <div id="carousel-title">
-          <h3>FEATURED <span>WORKS</span></h3>
-          <button class="next " onclick="plusSlidesQuery(1)"><i class="fa fa-angle-right"></i></button>
-        </div>
-        <div class="container-slides-query">
-
-          <div class="mySlides-query fade">
-            <img src="./assets/images/slider/slider-img-1.jpg">
-            <img src="./assets/images/slider/slider-img-2.jpg">
-          </div>
-
-
-
-          <div class="mySlides-query fade">
-            <img src="./assets/images/slider/slider-img-3.jpg">
-            <img src="./assets/images/slider/slider-img-4.jpg">
-          </div>
-
-          <div class="mySlides-query fade">
-            <img src="./assets/images/slider/slider-img-1.jpg">
-            <img src="./assets/images/slider/slider-img-2.jpg">
-          </div>
-
-          <div class="mySlides-query fade">
-            <img src="./assets/images/slider/slider-img-3.jpg">
-            <img src="./assets/images/slider/slider-img-4.jpg">
-          </div>
-        </div>
-        <br>
-
-        <div id="dot-slider-query">
-          <span class="dot-query" onclick="currentSlideQuery(1)"></span>
-          <span class="dot-query" onclick="currentSlideQuery(2)"></span>
-          <span class="dot-query" onclick="currentSlideQuery(3)"></span>
-          <span class="dot-query" onclick="currentSlideQuery(4)"></span>
-        </div>
+      <div id="carousel-title">
+        <h3>FEATURED <span>WORKS</span></h3>
+        <button class="next " onclick="plusSlidesQueryBis(1)"><i class="fa fa-angle-right"></i></button>
       </div>
+      <div class="container-slides-query-bis">
 
-      <div class="slideshow-container-query-bis">
-
-        <div id="carousel-title">
-          <h3>FEATURED <span>WORKS</span></h3>
-          <button class="next " onclick="plusSlidesQueryBis(1)"><i class="fa fa-angle-right"></i></button>
+        <div class="mySlides-query-bis fade">
+          <img src="./assets/images/slider/slider-img-1.jpg">
+          <img src="./assets/images/slider/slider-img-2.jpg">
+          <img src="./assets/images/slider/slider-img-3.jpg">
         </div>
-        <div class="container-slides-query-bis">
-
-          <div class="mySlides-query-bis fade">
-            <img src="./assets/images/slider/slider-img-1.jpg">
-            <img src="./assets/images/slider/slider-img-2.jpg">
-            <img src="./assets/images/slider/slider-img-3.jpg">
-          </div>
 
 
 
-          <div class="mySlides-query-bis fade">
-            <img src="./assets/images/slider/slider-img-4.jpg">
-            <img src="./assets/images/slider/slider-img-1.jpg">
-            <img src="./assets/images/slider/slider-img-2.jpg">
-          </div>
-
+        <div class="mySlides-query-bis fade">
+          <img src="./assets/images/slider/slider-img-4.jpg">
+          <img src="./assets/images/slider/slider-img-1.jpg">
+          <img src="./assets/images/slider/slider-img-2.jpg">
         </div>
-        <br>
 
-        <div id="dot-slider-query-bis">
-          <span class="dot-query-bis" onclick="currentSlideQueryBis(1)"></span>
-          <span class="dot-query-bis" onclick="currentSlideQueryBis(2)"></span>
-          <span class="dot-query-bis" onclick="currentSlideQueryBis(3)"></span>
-          <span class="dot-query-bis" onclick="currentSlideQueryBis(4)"></span>
-        </div>
       </div>
+      <br>
 
-      <!-- SECTION ABOUT US -->
+      <div id="dot-slider-query-bis">
+        <span class="dot-query-bis" onclick="currentSlideQueryBis(1)"></span>
+        <span class="dot-query-bis" onclick="currentSlideQueryBis(2)"></span>
+        <span class="dot-query-bis" onclick="currentSlideQueryBis(3)"></span>
+        <span class="dot-query-bis" onclick="currentSlideQueryBis(4)"></span>
+      </div>
+    </div>
 
-      <section id="about-us">
-        <div>
-          <img class="container reveal" src="./assets/images/cooker-img.png" alt="">
-          <h2 class="container reveal">Your <span>Restaurant’s</span></h2>
-          <h2 class="container reveal">Website Has To Look <span>Good</span></h2>
-          <hr class="container reveal">
-          <p class="container reveal"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
-            dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
-        </div>
-      </section>
+    <!-- SECTION ABOUT US -->
 
-      <!-- SECTION BLOG  -->
-      <section id="section-blog">
-        <h2>Latest <span>From</span> the <span>Blog</span></h2>
+    <section id="about-us">
+      <div>
+        <img class="container reveal" src="./assets/images/cooker-img.png" alt="">
+        <h2 class="container reveal">Your <span>Restaurant’s</span></h2>
+        <h2 class="container reveal">Website Has To Look <span>Good</span></h2>
         <hr class="container reveal">
+        <p class="container reveal"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et
+          dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+      </div>
+    </section>
 
-        <div class="flex-box-blog">
-          <div class="box-img-blog">
-            <img src="./assets/images/blog/blog-img-1.jpg" alt="blog-img-1" />
-          </div>
+    <!-- SECTION BLOG  -->
+    <section id="section-blog">
+      <h2>Latest <span>From</span> the <span>Blog</span></h2>
+      <hr class="container reveal">
 
-          <div class="box-description-blog">
-            <h3>
-              Homestyle <br class="br-blog"> Chicken <br class="br-blog-due">Pot Pie
-            </h3>
-            <hr class="container reveal">
-            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-          </div>
-
-
-          <div class="box-img-blog">
-            <img src="./assets/images/blog/blog-img-2.jpg" alt="blog-img-2" />
-          </div>
-
-          <div class="box-description-blog">
-            <h3>
-              Homestyle <br class="br-blog"> Chicken<br class="br-blog-due">Pot Pie
-            </h3>
-            <hr>
-            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-          </div>
-
-
-
-          <div class="box-description-blog-sx">
-            <h3 class="tophtre">
-              Homestyle <br class="br-blog"> Chicken <br class="br-blog-due">Pot Pie
-            </h3>
-            <hr class="container reveal">
-            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-          </div>
-
-          <div class="box-img-blog">
-            <img src="./assets/images/blog/blog-img-3.jpg" alt="blog-img-3" />
-          </div>
-
-
-          <div class="box-description-blog-sx">
-            <h3>
-              Homestyle <br class="br-blog"> Chicken <br class="br-blog-due">Pot Pie
-            </h3>
-            <hr class="container reveal">
-            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-          </div>
-
-          <div class="box-img-blog">
-            <img src="./assets/images/blog/blog-img-4.jpg" alt="blog-img-4" />
-          </div>
-
-          <div class="box-img-blog">
-            <img src="./assets/images/blog/blog-img-5.jpg" alt="blog-img-5" />
-          </div>
-
-          <div class="box-description-blog">
-            <h3>
-              Homestyle <br class="br-blog"> Chicken <br class="br-blog-due"> Pot Pie
-            </h3>
-            <hr class="container reveal">
-            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-          </div>
-
-          <div class="box-img-blog">
-            <img src="./assets/images/blog/blog-img-6.jpg" alt="blog-img-6" />
-          </div>
-
-          <div class="box-description-blog">
-            <h3>
-              Homestyle <br class="br-blog"> Chicken<br class="br-blog-due"> Pot Pie
-            </h3>
-            <hr class="container reveal">
-            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
-          </div>
+      <div class="flex-box-blog">
+        <div class="box-img-blog">
+          <img src="./assets/images/blog/blog-img-1.jpg" alt="blog-img-1" />
         </div>
 
-        <div class="section-blog-button" >
-          <button  class="container reveal fade-left" ><a href="#">MORE INFO</a></button>
-        </div>
-      </section>
-
-      <!-- SECTION MENU    -->
-      <section id="menu_price">
-        <div>
-
-          <div id="menu_container">
-            <h2 class="container reveal">our <span>MENU</span> the <span>PRICE</span></h2>
-            <hr class="container reveal">
-            <p id="block_p" class="container reveal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id,
-              delectus unde minima modi
-              officiis iure omnis illum porro voluptates aspernatur autem dolorem itaque obcaecati non inventore maxime
-              excepturi quam.</p>
-          </div>
-
-          <h3 id="menu_price_title">featured <span>on the week</span></h3>
-          <ul id="menu_list">
-            <li class="container reveal">
-              <h3>Pancakes n' Such<span>$ 25.00</span>
-                <div class="bottom_border"></div>
-              </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
-                velit
-                enim. Debitis ullam consectetur natus quo ratione</p>
-            </li>
-            <li class="container reveal">
-              <h3>Homestyle Chicken Pot Pie<span>$ 10.00</span>
-                <div class="bottom_border"></div>
-              </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
-                velit
-                enim. Debitis ullam consectetur natus quo ratione</p>
-            </li>
-            <li class="container reveal">
-              <h3>Cereal, Panecillos y Frutas<span>$ 5.00</span>
-                <div class="bottom_border"></div>
-              </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
-                velit
-                enim. Debitis ullam consectetur natus quo ratione</p>
-            </li>
-            <li class="container reveal">
-              <h3>Meat of Skewers<span>$ 15.00</span>
-                <div class="bottom_border"></div>
-              </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
-                velit
-                enim. Debitis ullam consectetur natus quo ratione</p>
-            </li>
-            <li class="container reveal">
-              <h3>Steak with a Garlic and Parsley Risotto<span>$ 75.00</span>
-                <div class="bottom_border"></div>
-              </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
-                velit
-                enim. Debitis ullam consectetur natus quo ratione</p>
-            </li>
-            <li class="container reveal">
-              <h3>Caesar Salad<span>$ 7.00</span>
-                <div class="bottom_border"></div>
-              </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
-                velit
-                enim. Debitis ullam consectetur natus quo ratione</p>
-            </li>
-          </ul>
-          <div class="btn_container">
-            <a href="#" id="menu_btn">MORE INFO</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- NEWS SECTION -->
-
-      <section id="news">
-        <div id="news_container">
-          <h2 class="container reveal">SUBSCRIBE <span>to our</span> NEWSLETTER</h2>
-          <hr>
-          <p class="container reveal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam ex
-            omnis</p>
-
-          <div id="news_form">
-            <input type="email" placeholder="Enter your email to subscribe...">
-
-            <div id="news_btn_container">
-              <button type="submit">SUBSCRIBE</button>
-            </div>
-      </section>
-
-
-
-      <!-- CONTACT US SECTION -->
-
-      <section id="contacts">
-        <div id="contacts_heading">
-          <h2 class="container reveal">our <span>CONTACT US</span> </h2>
+        <div class="box-description-blog">
+          <h3>
+            Homestyle <br class="br-blog"> Chicken <br class="br-blog-due">Pot Pie
+          </h3>
           <hr class="container reveal">
-          <h3 class="container reveal fade-left">SIGN UP FOR <span>EMAIL ALERTS</span></h3>
-        </div>
-
-        <div id="form">
-          <input type="text" name="name" id="input_name" class="container reveal fade-top"
-            placeholder="Write your full name here...">
-          <input type="email" name="email" id="input_email" class="container reveal fade-top"
-            placeholder="Write your email address here...">
-          <textarea name="text" id="text_area" class="container reveal fade-top" cols="30" rows="10"
-            placeholder="Write your message here..."></textarea>
-          <div id="contact_btn_container" class="container reveal" >
-            <button type="submit">SEND YOUR MESSAGE</button>
-          </div>
+          <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
         </div>
 
 
-      </section>
+        <div class="box-img-blog">
+          <img src="./assets/images/blog/blog-img-2.jpg" alt="blog-img-2" />
+        </div>
 
-      <!-- SECTION FOOTER  -->
+        <div class="box-description-blog">
+          <h3>
+            Homestyle <br class="br-blog"> Chicken<br class="br-blog-due">Pot Pie
+          </h3>
+          <hr>
+          <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+        </div>
 
-      <footer>
-        <div id="section-footer-info">
-          <div class="container reveal fade-left" class="section-footer-container-info">
+
+
+        <div class="box-description-blog-sx">
+          <h3 class="tophtre">
+            Homestyle <br class="br-blog"> Chicken <br class="br-blog-due">Pot Pie
+          </h3>
+          <hr class="container reveal">
+          <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+        </div>
+
+        <div class="box-img-blog">
+          <img src="./assets/images/blog/blog-img-3.jpg" alt="blog-img-3" />
+        </div>
+
+
+        <div class="box-description-blog-sx">
+          <h3>
+            Homestyle <br class="br-blog"> Chicken <br class="br-blog-due">Pot Pie
+          </h3>
+          <hr class="container reveal">
+          <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+        </div>
+
+        <div class="box-img-blog">
+          <img src="./assets/images/blog/blog-img-4.jpg" alt="blog-img-4" />
+        </div>
+
+        <div class="box-img-blog">
+          <img src="./assets/images/blog/blog-img-5.jpg" alt="blog-img-5" />
+        </div>
+
+        <div class="box-description-blog">
+          <h3>
+            Homestyle <br class="br-blog"> Chicken <br class="br-blog-due"> Pot Pie
+          </h3>
+          <hr class="container reveal">
+          <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+        </div>
+
+        <div class="box-img-blog">
+          <img src="./assets/images/blog/blog-img-6.jpg" alt="blog-img-6" />
+        </div>
+
+        <div class="box-description-blog">
+          <h3>
+            Homestyle <br class="br-blog"> Chicken<br class="br-blog-due"> Pot Pie
+          </h3>
+          <hr class="container reveal">
+          <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+        </div>
+      </div>
+
+      <div class="section-blog-button">
+        <button class="container reveal fade-left"><a href="#">MORE INFO</a></button>
+      </div>
+    </section>
+
+    <!-- SECTION MENU    -->
+    <section id="menu_price">
+      <div>
+
+        <div id="menu_container">
+          <h2 class="container reveal">our <span>MENU</span> the <span>PRICE</span></h2>
+          <hr class="container reveal">
+          <p id="block_p" class="container reveal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id,
+            delectus unde minima modi
+            officiis iure omnis illum porro voluptates aspernatur autem dolorem itaque obcaecati non inventore maxime
+            excepturi quam.</p>
+        </div>
+
+        <h3 id="menu_price_title">featured <span>on the week</span></h3>
+        <ul id="menu_list">
+          <li class="container reveal">
+            <h3>Pancakes n' Such<span>$ 25.00</span>
+              <div class="bottom_border"></div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
+              velit
+              enim. Debitis ullam consectetur natus quo ratione</p>
+          </li>
+          <li class="container reveal">
+            <h3>Homestyle Chicken Pot Pie<span>$ 10.00</span>
+              <div class="bottom_border"></div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
+              velit
+              enim. Debitis ullam consectetur natus quo ratione</p>
+          </li>
+          <li class="container reveal">
+            <h3>Cereal, Panecillos y Frutas<span>$ 5.00</span>
+              <div class="bottom_border"></div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
+              velit
+              enim. Debitis ullam consectetur natus quo ratione</p>
+          </li>
+          <li class="container reveal">
+            <h3>Meat of Skewers<span>$ 15.00</span>
+              <div class="bottom_border"></div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
+              velit
+              enim. Debitis ullam consectetur natus quo ratione</p>
+          </li>
+          <li class="container reveal">
+            <h3>Steak with a Garlic and Parsley Risotto<span>$ 75.00</span>
+              <div class="bottom_border"></div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
+              velit
+              enim. Debitis ullam consectetur natus quo ratione</p>
+          </li>
+          <li class="container reveal">
+            <h3>Caesar Salad<span>$ 7.00</span>
+              <div class="bottom_border"></div>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem ex suscipit explicabo ea in minus
+              velit
+              enim. Debitis ullam consectetur natus quo ratione</p>
+          </li>
+        </ul>
+        <div class="btn_container">
+          <a href="#" id="menu_btn">MORE INFO</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS SECTION -->
+
+    <section id="news">
+      <div id="news_container">
+        <h2 class="container reveal">SUBSCRIBE <span>to our</span> NEWSLETTER</h2>
+        <hr>
+        <p class="container reveal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam ex
+          omnis</p>
+
+        <div id="news_form">
+          <input type="email" placeholder="Enter your email to subscribe...">
+
+          <div id="news_btn_container">
+            <button type="submit">SUBSCRIBE</button>
+          </div>
+    </section>
+
+
+
+    <!-- CONTACT US SECTION -->
+
+    <section id="contacts">
+      <div id="contacts_heading">
+        <h2 class="container reveal">our <span>CONTACT US</span> </h2>
+        <hr class="container reveal">
+        <h3 class="container reveal fade-left">SIGN UP FOR <span>EMAIL ALERTS</span></h3>
+      </div>
+
+      <div id="form">
+        <input type="text" name="name" id="input_name" class="container reveal fade-top"
+          placeholder="Write your full name here...">
+        <input type="email" name="email" id="input_email" class="container reveal fade-top"
+          placeholder="Write your email address here...">
+        <textarea name="text" id="text_area" class="container reveal fade-top" cols="30" rows="10"
+          placeholder="Write your message here..."></textarea>
+        <div id="contact_btn_container" class="container reveal">
+          <button type="submit">SEND YOUR MESSAGE</button>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- SECTION FOOTER  -->
+
+    <footer>
+      <div id="section-footer-info">
+        <div class="container reveal fade-left" class="section-footer-container-info">
+
+          <div>
+            <h3 class="info-title-cont"> CONTACT <span>INFO</span></h3>
+          </div>
+          <div class="container-info-contact">
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <h3 class="title-cont">Telefone</h3>
+              <p>(000) 123 456 78-(000)123 4567 89</p>
+            </div>
 
             <div>
-              <h3 class="info-title-cont"> CONTACT <span>INFO</span></h3>
+              <i class="fa-solid fa-location-dot"></i>
+              <h3 class="title-cont">Address</h3>
+              <p>2046 Blue Spruce Lane Laurel Canada</p>
             </div>
-            <div class="container-info-contact">
-              <div>
-                <i class="fa-solid fa-phone"></i>
-                <h3 class="title-cont">Telefone</h3>
-                <p>(000) 123 456 78-(000)123 4567 89</p>
-              </div>
-
-              <div>
-                <i class="fa-solid fa-location-dot"></i>
-                <h3 class="title-cont">Address</h3>
-                <p>2046 Blue Spruce Lane Laurel Canada</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-envelope"></i>
-                <h3 class="title-cont">Email</h3>
-                <p>rest@gmail.com - rest@mail.ru</p>
-              </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <h3 class="title-cont">Email</h3>
+              <p>rest@gmail.com - rest@mail.ru</p>
             </div>
           </div>
+        </div>
 
-          <div class="container reveal fade-left" class="section-footer-container-info">
-            <div>
-              <div class="container-info-contact-due">
-                <h3 class="info-title-cont"> LATEST <span>BLOG POSTS</span></h3>
-                <p class="data-info-footer"><span>Nov 9-2014</span></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien
-                </p>
-              </div>
-              <div class="container-info-contact-due">
-                <p class="data-info-footer-due"><span>Sep 8-2014</span></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien
-                </p>
-              </div>
+        <div class="container reveal fade-left" class="section-footer-container-info">
+          <div>
+            <div class="container-info-contact-due">
+              <h3 class="info-title-cont"> LATEST <span>BLOG POSTS</span></h3>
+              <p class="data-info-footer"><span>Nov 9-2014</span></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien
+              </p>
+            </div>
+            <div class="container-info-contact-due">
+              <p class="data-info-footer-due"><span>Sep 8-2014</span></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien
+              </p>
             </div>
           </div>
+        </div>
 
 
-          <div class="container reveal fade-left" class="section-footer-container-info">
-            <div>
-              <h3 class="info-title-cont">PHOTO <span>STREAM</span></h3>
-              <div class="section-footer-container-img section-footer-container-img-flex">
-                <img src="./assets/images/photo/photo-1.jpg" alt="img-footer1">
-                <img src="./assets/images/photo/photo-2.jpg" alt="img-footer2">
-                <img src="./assets/images/photo/photo-3.jpg" alt="img-footer3">
-                <img src="./assets/images/photo/photo-4.jpg" alt="img-footer4">
+        <div class="container reveal fade-left" class="section-footer-container-info">
+          <div>
+            <h3 class="info-title-cont">PHOTO <span>STREAM</span></h3>
+            <div class="section-footer-container-img section-footer-container-img-flex">
+              <img src="./assets/images/photo/photo-1.jpg" alt="img-footer1">
+              <img src="./assets/images/photo/photo-2.jpg" alt="img-footer2">
+              <img src="./assets/images/photo/photo-3.jpg" alt="img-footer3">
+              <img src="./assets/images/photo/photo-4.jpg" alt="img-footer4">
+            </div>
+            <h3 class="info-title-cont info-title-cont-follow">Follow <span>US</span></h3>
+            <div class="brands-container">
+              <div class="backg-container-brands">
+                <a href="https://demo.themefisher.com/restaurant/#" class="footer-social"><i
+                    class="fa-brands fa-twitter"></i></a>
               </div>
-              <h3 class="info-title-cont info-title-cont-follow">Follow <span>US</span></h3>
-              <div class="brands-container">
-                <div class="backg-container-brands">
-                  <a href="https://demo.themefisher.com/restaurant/#" class="footer-social"><i
-                      class="fa-brands fa-twitter"></i></a>
-                </div>
-                <div class="backg-container-brands">
-                  <a href="https://demo.themefisher.com/restaurant/#" class="footer-social"><i
-                      class="fa-brands fa-facebook-f"></i></a>
-                </div>
-                <div class="backg-container-brands">
-                  <a href="https://demo.themefisher.com/restaurant/#" class="footer-social"><i
-                      class="fa-brands fa-twitter"></i></a>
-                </div>
-                <div class="backg-container-brands">
-                  <a href="https://demo.themefisher.com/restaurant/#" class="footer-social"><i
-                      class="fa-brands fa-behance"></i></a>
-                </div>
+              <div class="backg-container-brands">
+                <a href="https://demo.themefisher.com/restaurant/#" class="footer-social"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+              </div>
+              <div class="backg-container-brands">
+                <a href="https://demo.themefisher.com/restaurant/#" class="footer-social"><i
+                    class="fa-brands fa-twitter"></i></a>
+              </div>
+              <div class="backg-container-brands">
+                <a href="https://demo.themefisher.com/restaurant/#" class="footer-social"><i
+                    class="fa-brands fa-behance"></i></a>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-      <section id="footer-copywrite">
-        <p>Copyright © 2014 - All Rights Reserved.Design and Developed By <br class="br-footer"> <span>
-            Themefisher</span>
-        </p>
-      </section>
-    </main>
-    <script src="./assets/Js/script.js"></script>
+      </div>
+    </footer>
+    <section id="footer-copywrite">
+      <p>Copyright © 2014 - All Rights Reserved.Design and Developed By <br class="br-footer"> <span>
+          Themefisher</span>
+      </p>
+    </section>
+  </main>
+  <script src="./assets/Js/script.js"></script>
 </body>
 
 

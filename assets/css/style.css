@@ -1,6 +1,6 @@
 /*HOME*/
 #home {
-  height: 100vh;
+  height: 50vh;
 }
 
 header {
@@ -21,7 +21,7 @@ header {
 }
 
 nav {
-  height: 50%;
+  height: 30%;
   width: 90%;
   background-color: #fff;
   opacity: 0.8;
@@ -779,7 +779,6 @@ nav ul li:first-child {
   animation: fade-top 0.8s ease-in;
 }
 
-
 @keyframes fade-left {
   0% {
     transform: translateX(-150px);
@@ -803,4 +802,3 @@ nav ul li:first-child {
     opacity: 1;
   }
 }
-
