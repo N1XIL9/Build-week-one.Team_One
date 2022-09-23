@@ -46,6 +46,8 @@ nav ul {
 }
 
 nav ul li {
+  height: 50px;
+  box-sizing: border-box;
   display: block;
   background-color: white;
   z-index: 5;
@@ -59,47 +61,13 @@ nav ul li a {
 }
 
 ul li:first-child {
-  width: 97%;
   border-bottom: 3px solid #ff4f02;
 }
 
-.home-li-about:hover {
-  border-bottom: 3px solid #ff530a;
-  width: 98%;
+.border-button-nav:hover {
+  border-bottom: 3px solid #ff4f02;
   animation-name: loading;
-  animation-duration: 0.3s;
-  animation-timing-function: linear;
-}
-
-.home-li-blog:hover {
-  border-bottom: 3px solid #ff530a;
-  width: 98%;
-  animation-name: loading;
-  animation-duration: 0.3s;
-  animation-timing-function: linear;
-}
-
-.home-li-menu:hover {
-  border-bottom: 3px solid #ff530a;
-  width: 98%;
-  animation-name: loading;
-  animation-duration: 0.3s;
-  animation-timing-function: linear;
-}
-
-.home-li-news:hover {
-  border-bottom: 3px solid #ff530a;
-  width: 98%;
-  animation-name: loading;
-  animation-duration: 0.3s;
-  animation-timing-function: linear;
-}
-
-.home-li-contacts:hover {
-  border-bottom: 3px solid #ff530a;
-  width: 98%;
-  animation-name: loading;
-  animation-duration: 0.3s;
+  animation-duration: 0.1s;
   animation-timing-function: linear;
 }
 
@@ -117,7 +85,7 @@ ul li:first-child {
   display: none;
 }
 
-#check:checked~ul {
+#check:checked ~ ul {
   display: block;
   bottom: -100;
 }
@@ -552,7 +520,6 @@ ul li:first-child {
   padding-left: 2vh;
 }
 
-
 #news_btn_container button {
   font-family: "first-font";
   background-color: #7ec3bb;
@@ -812,8 +779,6 @@ ul li:first-child {
 .active.fade-top {
   animation: fade-top 1s ease-in;
 }
-
-
 
 @keyframes fade-left {
   0% {
