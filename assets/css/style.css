@@ -776,8 +776,9 @@ nav ul li:first-child {
 }
 
 .active.fade-top {
-  animation: fade-top 1s ease-in;
+  animation: fade-top 0.8s ease-in;
 }
+
 
 @keyframes fade-left {
   0% {
@@ -802,3 +803,4 @@ nav ul li:first-child {
     opacity: 1;
   }
 }
+

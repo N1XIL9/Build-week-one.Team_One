@@ -15,7 +15,7 @@ section {
 }
 
 /* DIMENSIONE BASE DIV  */
-div {
+div, nav {
     width: 92%;
     max-width: 1170px;
     margin: 0 auto;
