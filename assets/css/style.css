@@ -552,6 +552,7 @@ ul li:first-child {
   padding-left: 2vh;
 }
 
+
 #news_btn_container button {
   font-family: "first-font";
   background-color: #7ec3bb;
@@ -811,6 +812,8 @@ ul li:first-child {
 .active.fade-top {
   animation: fade-top 1s ease-in;
 }
+
+
 
 @keyframes fade-left {
   0% {
