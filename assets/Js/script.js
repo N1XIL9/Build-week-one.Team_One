@@ -1,11 +1,11 @@
-//CAROUSEL
 let slideIndex = 1;
 showSlides(slideIndex);
 showSlidesQuery(slideIndex);
 showSlidesQueryBis(slideIndex);
 
+// Next/previous controls
 function plusSlides(n) {
-  showSlidesQuery((slideIndex += n));
+  showSlides((slideIndex += n));
 }
 
 function plusSlidesQuery(n) {
@@ -15,6 +15,7 @@ function plusSlidesQuery(n) {
 function plusSlidesQueryBis(n) {
   showSlidesQueryBis((slideIndex += n));
 }
+// Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
