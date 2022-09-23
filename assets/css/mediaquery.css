@@ -7,7 +7,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   /*HOME*/
   header {
     background-size: cover;
@@ -16,12 +15,12 @@
 
   nav {
     display: flex;
-    height: 14%;
+    height: 20%;
     align-items: baseline;
     justify-content: space-between;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     display: contents;
   }
 
@@ -361,7 +360,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-
   /*HOME*/
   header {
     background-size: cover;
@@ -620,7 +618,7 @@
   }
 }
 
-@media screen and (min-width:2560px) {
+@media screen and (min-width: 2560px) {
   nav {
     height: 8%;
   }
