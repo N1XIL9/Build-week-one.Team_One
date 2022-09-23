@@ -4,6 +4,10 @@ showSlides(slideIndex);
 showSlidesQuery(slideIndex);
 showSlidesQueryBis(slideIndex);
 
+function plusSlides(n) {
+  showSlidesQuery((slideIndex += n));
+}
+
 function plusSlidesQuery(n) {
   showSlidesQuery((slideIndex += n));
 }
