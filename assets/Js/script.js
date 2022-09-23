@@ -107,19 +107,19 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-//NAV
-scrollPx = 250;
-let stickyHome = document.getElementsByClassName("sticky-home")[0];
-let home = document.getElementById("home");
-const scrollContainer = () => {
-  return home;
-};
-home.addEventListener("scroll", () => {
-  if (scrollContainer().scrollTop > this.scrollPx) {
-    stickyHome.style.position = "fixed";
-    console.log("scroll");
-  } else {
-    stickyHome.style.position = "sticky";
-    console.log("noscroll");
-  }
-});
+// //NAV
+// scrollPx = 250;
+// let stickyHome = document.getElementsByClassName("sticky-home")[0];
+// let home = document.getElementById("home");
+// const scrollContainer = () => {
+//   return home;
+// };
+// home.addEventListener("scroll", () => {
+//   if (scrollContainer().scrollTop > this.scrollPx) {
+//     stickyHome.style.position = "fixed";
+//     console.log("scroll");
+//   } else {
+//     stickyHome.style.position = "sticky";
+//     console.log("noscroll");
+//   }
+// });

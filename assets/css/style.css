@@ -1,6 +1,6 @@
 /*HOME*/
 #home {
-  height: 100vh;
+  height: 50vh;
 }
 
 header {
@@ -20,8 +20,13 @@ header {
   color: #9d8e71;
 }
 
+/* .sticky-home {
+  position: sticky;
+  top: 0;
+} */
+
 nav {
-  height: 50%;
+  height: 25%;
   width: 90%;
   background-color: #fff;
   opacity: 0.8;
