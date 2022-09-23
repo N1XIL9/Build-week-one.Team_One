@@ -1,9 +1,9 @@
+//CAROUSEL
 let slideIndex = 1;
 showSlides(slideIndex);
 showSlidesQuery(slideIndex);
 showSlidesQueryBis(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
@@ -15,7 +15,6 @@ function plusSlidesQuery(n) {
 function plusSlidesQueryBis(n) {
   showSlidesQueryBis((slideIndex += n));
 }
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
@@ -107,3 +106,20 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+//NAV
+scrollPx = 250;
+let stickyHome = document.getElementsByClassName("sticky-home")[0];
+let home = document.getElementById("home");
+const scrollContainer = () => {
+  return home;
+};
+home.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > this.scrollPx) {
+    stickyHome.style.position = "fixed";
+    console.log("scroll");
+  } else {
+    stickyHome.style.position = "sticky";
+    console.log("noscroll");
+  }
+});
