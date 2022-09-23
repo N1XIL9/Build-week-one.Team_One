@@ -28,12 +28,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   padding: 0.5rem;
   z-index: 100;
 }
 
+.sticky-home {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
 nav ul {
   position: absolute;
   top: 100%;
@@ -46,7 +51,7 @@ nav ul {
 }
 
 nav ul li {
-  height: 50px;
+  height: 3rem;
   box-sizing: border-box;
   display: block;
   background-color: white;
@@ -60,7 +65,7 @@ nav ul li a {
   font-weight: 500;
 }
 
-ul li:first-child {
+nav ul li:first-child {
   border-bottom: 3px solid #ff4f02;
 }
 
@@ -87,7 +92,6 @@ ul li:first-child {
 
 #check:checked ~ ul {
   display: block;
-  bottom: -100;
 }
 
 .checkbtn-nav {

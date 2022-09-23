@@ -17,6 +17,11 @@
     display: flex;
     height: 14%;
     align-items: baseline;
+    justify-content: space-between;
+  }
+
+  #check:checked ~ ul {
+    display: contents;
   }
 
   nav ul {
@@ -27,30 +32,24 @@
     top: 0;
   }
 
+  nav ul li {
+    box-sizing: border-box;
+    height: 2rem;
+  }
+
   nav ul li a {
     text-decoration: none;
     color: black;
   }
 
-  ul li:first-child {
+  ul li a:first-child {
     width: auto;
   }
 
   .border-button-nav:hover {
     width: auto;
-    animation-name: loading-query;
-    animation-duration: 0.1s;
-    animation-timing-function: linear;
-  }
-
-  @keyframes loading-query {
-    0% {
-      width: 0%;
-    }
-
-    100% {
-      width: auto;
-    }
+    animation-name: none;
+    border-bottom: 3px solid #ff4f02;
   }
 
   .fa-bars {
@@ -361,6 +360,59 @@
 }
 
 @media screen and (min-width: 1024px) {
+  /*HOME*/
+  header {
+    background-size: cover;
+    height: 40%;
+  }
+
+  nav {
+    height: 20%;
+    padding-top: 1rem;
+  }
+
+  nav ul {
+    gap: 2rem;
+    justify-content: flex-end;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    height: 2rem;
+  }
+  /*CAROUSEL*/
+
+  .slideshow-container {
+    display: none;
+  }
+  .slideshow-container-query {
+    display: none;
+  }
+
+  .slideshow-container-query-bis {
+    display: inline;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .container-slides-query-bis {
+    text-align: center;
+  }
+
+  .mySlides-query-bis {
+    display: flex;
+  }
+
+  #dot-slider {
+    display: none;
+  }
+  #dot-slider-query {
+    display: none;
+  }
+  #dot-slider-query-bis {
+    display: block;
+    text-align: center;
+  }
+
   /* ABOUT US  */
   #about-us h2 {
     font-size: 2em;
