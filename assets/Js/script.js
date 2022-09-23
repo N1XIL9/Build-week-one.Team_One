@@ -88,6 +88,13 @@ function showSlidesQuery(n) {
       
 
 
+
+
+
+
+
+// ANIMAZIONE FADE SITO 
+
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
