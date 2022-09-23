@@ -3,7 +3,7 @@
 header {
   height: 25vh;
   width: 100%;
-  background-image:url("../images/overlay-pattern2.png"), url("../images/header.jpg");
+  background-image: url("../images/overlay-pattern2.png"), url("../images/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -83,7 +83,7 @@ nav ul li:first-child {
   display: none;
 }
 
-#check:checked ~ ul {
+#check:checked~ul {
   display: block;
 }
 
@@ -204,8 +204,12 @@ nav ul li:first-child {
 }
 
 #about-us img {
+  width: 132px;
+  height: 132px;
   margin-top: 70px;
   margin-bottom: 40px;
+  border-radius: 100%;
+  order: 4px solid #ffffff;
 }
 
 #about-us h2 {
