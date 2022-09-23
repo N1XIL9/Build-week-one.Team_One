@@ -624,4 +624,8 @@
   nav {
     height: 8%;
   }
+  
+  .bottom_border{
+  margin-top: 1vh;
+  }
 }
