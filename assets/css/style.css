@@ -1,12 +1,9 @@
 /*HOME*/
-#home {
-  height: 50vh;
-}
 
 header {
-  height: 20%;
+  height: 25vh;
   width: 100%;
-  background-image: url("../images/overlay-pattern2.png"), url("../images/header.jpg");
+  background-image:url("../images/overlay-pattern2.png"), url("../images/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -18,6 +15,7 @@ header {
 
 #title-logo {
   color: #9d8e71;
+  margin-left: 1vh;
 }
 
 nav {
@@ -91,6 +89,7 @@ nav ul li:first-child {
 
 .checkbtn-nav {
   display: block;
+  margin-right: 2vh;
 }
 
 .fa-bars {
@@ -525,7 +524,7 @@ nav ul li:first-child {
   color: white;
   font-size: 1.1rem;
   font-weight: bold;
-  width: 34vh;
+  width: 24vh;
   height: 10vh;
   border: none;
   cursor: pointer;

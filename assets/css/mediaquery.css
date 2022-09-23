@@ -10,14 +10,14 @@
   /*HOME*/
   header {
     background-size: cover;
-    height: 50%;
+    height: 40vh;
   }
 
   nav {
     display: flex;
     height: 20%;
-    align-items: baseline;
     justify-content: space-between;
+    align-content: center;
   }
 
   #check:checked ~ ul {
@@ -26,10 +26,16 @@
 
   nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     background-color: transparent;
     position: relative;
     top: 0;
+    gap: 2.5vh;
+    padding-right: 2vh;
+  }
+
+  #title-logo{
+    margin-left: 1vh;
   }
 
   nav ul li {
@@ -69,6 +75,10 @@
 
   .container-slides-query {
     text-align: center;
+  }
+
+  .container-slides-query img{
+    margin-right: 1vh;
   }
 
   .mySlides {
@@ -363,7 +373,7 @@
   /*HOME*/
   header {
     background-size: cover;
-    height: 40%;
+    height: 50vh;
   }
 
   nav {
@@ -374,11 +384,16 @@
   nav ul {
     gap: 2rem;
     justify-content: flex-end;
+    padding-right: 4vh;
   }
 
   nav ul li {
     box-sizing: border-box;
     height: 2rem;
+  }
+
+  #title-logo{
+    padding-left: 3vh;
   }
 
   /*CAROUSEL*/
@@ -399,6 +414,10 @@
 
   .container-slides-query-bis {
     text-align: center;
+  }
+
+  .container-slides-query-bis img{
+    margin-right: 1vh;
   }
 
   .mySlides-query-bis {
